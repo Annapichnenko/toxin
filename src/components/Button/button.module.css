@@ -31,6 +31,7 @@
   text-transform: uppercase;
   color: #bc9cff;
   background: transparent;
+  padding: 0;
 }
 .blackButton {
   font-family: "Montserrat";
@@ -53,4 +54,13 @@
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
+}
+.wrapper {
+  position: relative;
+  display: inline-block;
+}
+.icon {
+  position: absolute;
+  right: 9px;
+  top: 12px;
 }

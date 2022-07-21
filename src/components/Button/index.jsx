@@ -1,4 +1,5 @@
 import React from "react";
+import { IconSvg } from "../IconSvg";
 import styles from "./button.module.css";
 
 export const Button = ({
@@ -8,11 +9,14 @@ export const Button = ({
   withoutFrame,
   blackButton,
   bigButton,
+  isIcons,
+  color,
 }) => {
   return (
-    <button
-      disabled={disabled}
-      className={`${styles.button}
+    <div className={styles.wrapper}>
+      <button
+        disabled={disabled}
+        className={`${styles.button}
        ${disabled && styles.buttonDisabled}
        ${withFrame && styles.withFrame}
        ${withoutFrame && styles.withoutFrame}
@@ -20,8 +24,10 @@ export const Button = ({
        ${bigButton && styles.bigButton}
        
        `}
-    >
-      {text}
-    </button>
+      >
+        {text}
+      </button>
+      {isIcons && <IconSvg styles={styles} color={color} />}
+    </div>
   );
 };

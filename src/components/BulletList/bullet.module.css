@@ -1,0 +1,23 @@
+.bullet {
+}
+.ul {
+  color: rgba(31, 32, 65, 0.25);
+}
+
+.li {
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  color: rgba(31, 32, 65, 0.75);
+}
+.li:before {
+  content: "";
+  background-image: url("./Ellipse.svg");
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  left: -20px;
+  top: 5px;
+}
