@@ -1,0 +1,38 @@
+.h4 {
+  color: rgba(31, 32, 65, 0.75);
+  padding: 0;
+  margin: 0;
+  margin-left: 9px;
+}
+.p {
+  padding: 0;
+  margin: 0;
+  color: rgba(31, 32, 65, 0.75);
+  margin-left: 9px;
+  margin-top: 5px;
+}
+.title {
+  font-size: 15px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 550px;
+  padding: 0;
+  margin: 0;
+  margin-left: 10px;
+}
+.like {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 40px;
+  margin-top: 10px;
+}
+.image {
+  padding: 0;
+  margin: 0;
+  width: 48px;
+  border-radius: 32px;
+  border: 2px solid #fff;
+  box-shadow: 0px 10px 20px 0px #1f20411a;
+}
+.items {
+  display: flex;
+}

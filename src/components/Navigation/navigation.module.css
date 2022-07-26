@@ -1,0 +1,43 @@
+.navigation {
+  color: rgba(31, 32, 65, 0.5);
+  display: flex;
+  gap: 20px;
+}
+.dt {
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+}
+.dt:before {
+  background-image: url("./nav.svg");
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  left: 55px;
+  top: 6px;
+}
+.dt1 {
+  font-size: 17px;
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  padding-right: 20px;
+}
+.dt1[open] .dt1:before {
+  transform: rotate(180deg);
+}
+
+.dt1:before {
+  background-image: url("./nav.svg");
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-repeat: no-repeat;
+  left: 95px;
+  top: 6px;
+}
