@@ -17,6 +17,8 @@ import { Navigation } from "../../components/Navigation";
 import { Logotip } from "../../components/Logotip";
 import { Header } from "../../components/Header";
 import { SignUp } from "../../components/SignUp";
+import { SocialButton } from "../../components/SocialButton";
+import { Footer } from "../../components/Footer";
 export const Test = () => {
   const data = [
     {
@@ -205,6 +207,12 @@ export const Test = () => {
       </div>
       <div className="sign">
         <SignUp />
+      </div>
+      <div className="social">
+        <SocialButton />
+      </div>
+      <div className="footer">
+        <Footer />
       </div>
     </div>
   );
