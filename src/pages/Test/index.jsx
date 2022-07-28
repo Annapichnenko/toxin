@@ -19,6 +19,8 @@ import { Header } from "../../components/Header";
 import { SignUp } from "../../components/SignUp";
 import { SocialButton } from "../../components/SocialButton";
 import { Footer } from "../../components/Footer";
+import { FooterMobile } from "../../components/FooterMobile";
+import { RegistrationForm } from "../../components/RegistrationForm";
 export const Test = () => {
   const data = [
     {
@@ -213,6 +215,12 @@ export const Test = () => {
       </div>
       <div className="footer">
         <Footer />
+      </div>
+      <div className="mobile">
+        <FooterMobile />
+      </div>
+      <div className="form">
+        <RegistrationForm />
       </div>
     </div>
   );

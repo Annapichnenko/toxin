@@ -3,6 +3,7 @@ import { Input } from "../Input";
 import { Logotip } from "../Logotip";
 import { SocialButton } from "../SocialButton";
 import styles from "./footer.module.css";
+
 export const Footer = () => {
   return (
     <div className={styles.wrapper}>
