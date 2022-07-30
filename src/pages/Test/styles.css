@@ -63,11 +63,20 @@
 }
 .footer {
   margin-top: 100px;
-  margin-bottom: 10000px;
+  margin-bottom: 100px;
 }
 body {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 .form {
   margin-top: 150px;
+}
+.comfort {
+  margin-top: 150px;
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+}
+.card {
+  margin-top: 100px;
 }

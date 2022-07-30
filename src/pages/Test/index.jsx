@@ -21,6 +21,10 @@ import { SocialButton } from "../../components/SocialButton";
 import { Footer } from "../../components/Footer";
 import { FooterMobile } from "../../components/FooterMobile";
 import { RegistrationForm } from "../../components/RegistrationForm";
+import { Comfort } from "../../components/Comfort";
+import comfort1 from "../../components/Comfort/emoticon.svg";
+import comfort2 from "../../components/Comfort/location_city.svg";
+import { Card } from "../../components/Card";
 export const Test = () => {
   const data = [
     {
@@ -221,6 +225,21 @@ export const Test = () => {
       </div>
       <div className="form">
         <RegistrationForm />
+      </div>
+      <div className="comfort">
+        <Comfort
+          title="Комфорт"
+          text="Шумопоглощающие стены"
+          image={comfort1}
+        />
+        <Comfort
+          title="Удобство"
+          text="Окно в каждой из спален"
+          image={comfort2}
+        />
+      </div>
+      <div className="card">
+        <Card />
       </div>
     </div>
   );

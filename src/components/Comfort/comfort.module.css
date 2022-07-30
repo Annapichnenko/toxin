@@ -1,0 +1,28 @@
+.comfort {
+  display: flex;
+  column-gap: 10px;
+  align-items: center;
+  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
+  padding-bottom: 17px;
+  width: 260px;
+}
+.title1 {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 233px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 0;
+  font-weight: 700;
+}
+.title2 {
+  font-size: 14px;
+  color: rgba(31, 32, 65, 0.75);
+  width: 233px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 8px;
+  margin: 0;
+  font-weight: 400;
+}
