@@ -79,4 +79,13 @@ body {
 }
 .card {
   margin-top: 100px;
+  margin-bottom: 100px;
+}
+.date {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.down {
+  margin-bottom: 100px;
+  margin-left: 30px;
 }

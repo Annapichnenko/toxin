@@ -1,5 +1,6 @@
 import React from "react";
 import { Button } from "../Button";
+import { DateCalendar } from "../DateCalendar";
 import { Input } from "../Input";
 import styles from "./card.module.css";
 export const Card = () => {
@@ -9,11 +10,11 @@ export const Card = () => {
       <div className={styles.title2}>
         <div className={styles.title3}>
           <h4 className={styles.text}>Прибытие</h4>
-          <Input placeholder="ДД.ММ.ГГГГ" color="#BC9CFF" />
+          <DateCalendar />
         </div>
         <div className={styles.title4}>
           <h4 className={styles.text}>Выезд</h4>
-          <Input placeholder="ДД.ММ.ГГГГ" color="#BC9CFF" />
+          <DateCalendar />
         </div>
       </div>
       <div className={styles.input}>

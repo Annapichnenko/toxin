@@ -25,6 +25,8 @@ import { Comfort } from "../../components/Comfort";
 import comfort1 from "../../components/Comfort/emoticon.svg";
 import comfort2 from "../../components/Comfort/location_city.svg";
 import { Card } from "../../components/Card";
+import { DateCalendar } from "../../components/DateCalendar";
+import { DropDown } from "../../components/DropDown";
 export const Test = () => {
   const data = [
     {
@@ -240,6 +242,12 @@ export const Test = () => {
       </div>
       <div className="card">
         <Card />
+      </div>
+      <div className="date">
+        <DateCalendar />
+      </div>
+      <div className="down">
+        <DropDown />
       </div>
     </div>
   );
