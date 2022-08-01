@@ -11,10 +11,13 @@ export const Button = ({
   bigButton,
   isIcons,
   color,
+
+  ...props
 }) => {
   return (
     <div className={styles.wrapper}>
       <button
+        {...props}
         disabled={disabled}
         className={`${styles.button}
        ${disabled && styles.buttonDisabled}
