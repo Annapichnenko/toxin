@@ -27,6 +27,7 @@ import comfort2 from "../../components/Comfort/location_city.svg";
 import { Card } from "../../components/Card";
 import { DateCalendar } from "../../components/DateCalendar";
 import { DropDown } from "../../components/DropDown";
+import { Booking } from "../../components/Booking";
 export const Test = () => {
   const data = [
     {
@@ -265,6 +266,9 @@ export const Test = () => {
           text3="младенцы"
           title="сколько гостей"
         />
+      </div>
+      <div className="book">
+        <Booking />
       </div>
     </div>
   );

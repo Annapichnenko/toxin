@@ -18,7 +18,9 @@ export const RegistrationForm = () => {
       </div>
 
       <h4 className={styles.label}> Дата рождения</h4>
-      <Input placeholder="ДД.ММ.ГГГГ" color="#BC9CFF" />
+      <div className={styles.inputs}>
+        <Input placeholder="ДД.ММ.ГГГГ" color="#BC9CFF" />
+      </div>
 
       <div className={styles.enter}>данные для входа в сервис</div>
       <div className={styles.input1}>
