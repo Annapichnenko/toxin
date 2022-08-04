@@ -89,3 +89,9 @@ body {
   margin-bottom: 100px;
   margin-left: 30px;
 }
+
+.sliders {
+  margin-bottom: 500px;
+  display: flex;
+  column-gap: 50px;
+}
