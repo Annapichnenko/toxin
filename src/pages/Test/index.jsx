@@ -28,6 +28,8 @@ import { Card } from "../../components/Card";
 import { DateCalendar } from "../../components/DateCalendar";
 import { DropDown } from "../../components/DropDown";
 import { Slider } from "../../components/Slider";
+import { Carosel } from "../../components/Carosel";
+import { CardSlider } from "../../components/CardSlider";
 export const Test = () => {
   const data = [
     {
@@ -270,6 +272,23 @@ export const Test = () => {
       <div className="sliders">
         <Slider title="range-slider" />
         <Slider title="диапазон цены" />
+      </div>
+      <div className="slider">
+        <Carosel>
+          <div className="item item-1"></div>
+          <div className="item item-2"></div>
+          <div className="item item-3"></div>
+          <div className="item item-4"></div>
+        </Carosel>
+        <Carosel>
+          <div className="item item-5"></div>
+          <div className="item item-6"></div>
+          <div className="item item-7"></div>
+          <div className="item item-8"></div>
+        </Carosel>
+      </div>
+      <div className="card-slider">
+        <CardSlider />
       </div>
     </div>
   );

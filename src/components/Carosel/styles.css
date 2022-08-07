@@ -1,0 +1,44 @@
+.main-container {
+  height: 150px;
+  width: 270px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+.all-pages-container {
+  height: 100%;
+  display: flex;
+
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+}
+.left {
+  left: 12px;
+}
+.right {
+  right: 12px;
+}
+.bullets {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.bullet-wrapper {
+  position: absolute;
+  bottom: 0;
+  left: 75%;
+  z-index: 3;
+}
