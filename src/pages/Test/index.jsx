@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BulletList } from "../../components/BulletList";
 import { Button } from "../../components/Button";
 import { Checkbox } from "../../components/Checkbox";
@@ -30,6 +30,7 @@ import { DropDown } from "../../components/DropDown";
 import { Slider } from "../../components/Slider";
 import { Carosel } from "../../components/Carosel";
 import { CardSlider } from "../../components/CardSlider";
+import { Pagination } from "../../components/Pagination/Pagination";
 export const Test = () => {
   const data = [
     {
@@ -123,6 +124,38 @@ export const Test = () => {
       text: "Письменный стол",
     },
   ];
+
+  const [filteredValues, setFilteredValues] = useState([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  ]);
+  const [pagination, setPagination] = useState({
+    currentPage: 1,
+    current_values: [],
+    totalPages: null,
+    values: [],
+    query: null,
+  });
+
+  const pageLimit = 3;
+  const onPageChanged = ({
+    currentPage,
+    totalPages,
+    pageLimit,
+    filteredVal = filteredValues,
+  }) => {
+    let values = filteredVal;
+
+    let offset = (currentPage - 1) * pageLimit;
+    let current_values = values.slice(offset, offset + pageLimit);
+
+    setPagination({
+      ...pagination,
+      currentPage: currentPage,
+      current_values: current_values,
+      totalPages: totalPages,
+    });
+  };
   return (
     <div>
       <div className="button1">
@@ -289,6 +322,17 @@ export const Test = () => {
       </div>
       <div className="card-slider">
         <CardSlider />
+      </div>
+      <div className="pagination">
+        {pagination.current_values.map((el) => (
+          <span> {el}</span>
+        ))}
+        <Pagination
+          pageLimit={pageLimit}
+          totalRecords={filteredValues.length}
+          onPageChanged={onPageChanged}
+          pageNeighbours={1}
+        />
       </div>
     </div>
   );

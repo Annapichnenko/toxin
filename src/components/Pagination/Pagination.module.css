@@ -1,0 +1,62 @@
+.pagination {
+  display: flex;
+  justify-content: left;
+
+  list-style-type: none;
+}
+
+.pageLink {
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.3125rem;
+  height: 2.3125rem;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+
+.pageItemActive .pageLink {
+  font-weight: 500;
+  color: white;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+}
+.button {
+  border: none;
+  outline: none;
+  width: 40px;
+  height: 40px;
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 22px;
+}
+.wrapper {
+  position: relative;
+  cursor: pointer;
+}
+.icon {
+  background-image: url("./arrow_forward.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  z-index: 1;
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(31, 32, 65, 0.75);
+}
