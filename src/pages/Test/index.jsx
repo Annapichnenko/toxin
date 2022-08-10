@@ -31,6 +31,8 @@ import { Slider } from "../../components/Slider";
 import { Carosel } from "../../components/Carosel";
 import { CardSlider } from "../../components/CardSlider";
 import { Pagination } from "../../components/Pagination/Pagination";
+import { Graph } from "../../components/Graph";
+import { Rating } from "../../components/Rating";
 export const Test = () => {
   const data = [
     {
@@ -333,6 +335,12 @@ export const Test = () => {
           onPageChanged={onPageChanged}
           pageNeighbours={1}
         />
+      </div>
+      <div className="graph">
+        <Graph />
+      </div>
+      <div className="rating">
+        <Rating />
       </div>
     </div>
   );
