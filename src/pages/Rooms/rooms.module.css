@@ -1,0 +1,111 @@
+.titleX {
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+
+  color: rgba(31, 32, 65, 0.75);
+}
+.titleY {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  width: 203px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.checkboxes {
+  display: flex;
+}
+.title {
+  padding-bottom: 17px;
+}
+.textX {
+  margin-bottom: 11px;
+}
+.titleS {
+  width: 236px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.titleB {
+  margin-bottom: 5px;
+}
+.titleC {
+  margin-bottom: 4.56px;
+}
+.titleE {
+  margin-bottom: 20px;
+}
+.textC {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  width: 264px;
+  color: rgba(31, 32, 65, 0.5);
+}
+.date {
+  margin-bottom: 21.44px;
+}
+.down {
+  margin-bottom: 30.44px;
+}
+.titleD {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 17.12px;
+  color: #1f2041;
+}
+.titleF {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+  margin-top: 30px;
+  margin-bottom: 16px;
+  color: #1f2041;
+}
+.textA {
+  margin-top: 30.44px;
+  margin-bottom: 4.56px;
+}
+.CheckboxList {
+  margin-top: 30px;
+}
+.column {
+  margin-top: 30px;
+}
+.rommSlider {
+  margin-left: 140px;
+}
+.container {
+  display: flex;
+}
+.cardSlider {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 13px;
+  row-gap: 15px;
+}
+.sliders {
+  margin-left: 60px;
+  margin-top: 30px;
+}
+.rooms {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 29px;
+  margin-bottom: 19px;
+  color: #1f2041;
+}
+.pagination {
+  margin-left: 30%;
+  margin-top: 40.94px;
+  margin-bottom: 70px;
+}

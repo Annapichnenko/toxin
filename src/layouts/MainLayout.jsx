@@ -12,7 +12,7 @@ export const MainLayout = ({
         <Header isLogotip />
         <main>{children}</main>
       </div>
-      <Footer />
+      <Footer withFooterBorder={withFooterBorder} />
     </div>
   </>
 );

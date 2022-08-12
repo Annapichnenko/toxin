@@ -1,9 +1,14 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import { DateCalendar } from "../DateCalendar";
 import { Input } from "../Input";
 import styles from "./card.module.css";
 export const Card = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/rooms");
+  };
   return (
     <div className={styles.card}>
       <h4 className={styles.title}>Найдём номера под ваши пожелания </h4>
@@ -27,6 +32,7 @@ export const Card = () => {
           bigButton={true}
           isIcons={true}
           color="white"
+          onClick={handleClick}
         />
       </div>
     </div>

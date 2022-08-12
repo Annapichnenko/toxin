@@ -87,7 +87,6 @@
 .input {
   position: relative;
   width: 266px;
-  margin-bottom: 50px;
 }
 .date:focus {
   outline: none;

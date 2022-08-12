@@ -4,9 +4,9 @@ import { Logotip } from "../Logotip";
 import { SocialButton } from "../SocialButton";
 import styles from "./footer.module.css";
 
-export const Footer = () => {
+export const Footer = ({ withFooterBorder }) => {
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${withFooterBorder && styles.border}`}>
       <div className={styles.header}>
         <div className={styles.footer}>
           <div className={styles.text1}>

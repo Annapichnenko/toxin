@@ -2,7 +2,6 @@
   display: flex;
   justify-content: space-between;
   width: 270px;
-  margin-bottom: 23px;
 }
 .title {
   font-weight: 700;
