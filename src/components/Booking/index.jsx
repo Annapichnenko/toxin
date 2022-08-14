@@ -67,7 +67,7 @@ export const Booking = () => {
         <h4 className={styles.part8}>услуги</h4>
       </div>
       <div className={styles.book2}>
-        <h4 className={styles.parts}>Итого</h4>
+        <h4 className={styles.parts}>Итог</h4>
         <div className={styles.book1}> </div>
         <h4 className={styles.parte}>38 081₽</h4>
       </div>
