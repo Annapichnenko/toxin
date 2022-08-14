@@ -10,7 +10,7 @@ export const DropDown = ({
   array1,
   array2,
 }) => {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [count, setCount] = useState(0);
   const [count1, setCount1] = useState(2);
   const [count2, setCount2] = useState(2);

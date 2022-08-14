@@ -1,0 +1,111 @@
+.image1 {
+  background-image: url("./images.jpg");
+  width: 981px;
+  height: 485px;
+}
+.image2 {
+  background-image: url("./image1.jpg");
+  width: 461px;
+  height: 243px;
+}
+.image3 {
+  background-image: url("./image 3.jpg");
+  width: 461px;
+  height: 243px;
+}
+.images {
+  display: flex;
+}
+.imageses {
+}
+.content {
+  padding-top: 70px;
+}
+.title {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+}
+.comfort {
+}
+.title1 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+}
+.content {
+  display: flex;
+}
+.graph {
+  margin-left: 81px;
+  margin-right: 108px;
+}
+.text {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+  margin-top: 30px;
+  margin-bottom: 23px;
+}
+.text3 {
+  display: flex;
+  justify-content: space-between;
+  width: 750px;
+  align-items: center;
+}
+.text1 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 14px;
+
+  text-align: right;
+
+  color: rgba(31, 32, 65, 0.5);
+}
+.li {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+  margin-bottom: 20px;
+  color: #1f2041;
+}
+.text5 {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+
+  color: #1f2041;
+  margin-bottom: 20px;
+}
+.text6 {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  width: 341px;
+  color: rgba(31, 32, 65, 0.75);
+}
+.ul {
+  display: flex;
+  flex-direction: row;
+}
+.ul2 {
+  margin-left: 98.59px;
+}
+
+.content1 {
+  display: flex;
+  margin-bottom: 70px;
+}
+.booking1 {
+  width: 750px;
+  margin-right: 70px;
+}
+.bookes {
+  margin-top: 70px;
+}

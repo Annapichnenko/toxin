@@ -1,10 +1,15 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import { Carosel } from "../Carosel";
 import { RateButton } from "../RateButton";
 import styles from "./card.module.css";
 export const CardSlider = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/roomdetails");
+  };
   return (
-    <div className={styles.slider}>
+    <div onClick={handleClick} className={styles.slider}>
       <Carosel>
         <div className="item item-1"></div>
         <div className="item item-2"></div>
