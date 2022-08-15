@@ -8,7 +8,7 @@
   border-radius: 22px;
   border: none;
   cursor: pointer;
-  padding: 15px 20px;
+  padding: 14px 22.5px 15px 20px;
 }
 .buttonDisabled {
   opacity: 0.5;
@@ -22,6 +22,10 @@
   border-radius: 22px;
   background: white;
   border: 2px solid #bc9cff;
+  height: 44px;
+  box-sizing: border-box;
+  width: 99px;
+  padding: 14px 15px 15px 15px;
 }
 .withoutFrame {
   font-family: "Montserrat";
@@ -47,7 +51,7 @@
 .bigButton {
   box-sizing: border-box;
   width: 320px;
-  height: 44px;
+  height: 43px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   font-size: 12px;
@@ -64,6 +68,6 @@
 }
 .icon {
   position: absolute;
-  right: 9px;
+  right: 13px;
   top: 12px;
 }

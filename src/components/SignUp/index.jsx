@@ -15,8 +15,10 @@ export const SignUp = () => {
       </div>
 
       <div className={styles.span}>
-        <span> Нет аккаунта на Toxin?</span>
-        <Button text="создать" withFrame={true} />
+        <span className={styles.text}> Нет аккаунта на Toxin?</span>
+        <div className={styles.button2}>
+          <Button text="создать" withFrame={true} />
+        </div>
       </div>
     </form>
   );

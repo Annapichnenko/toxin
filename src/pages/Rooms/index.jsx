@@ -115,7 +115,9 @@ export const Rooms = () => {
               <h4 className={styles.titleF}>доступность</h4>
 
               <div className={styles.checkboxes}>
-                <Checkbox id="checkbox4" />
+                <div className={styles.checkbox}>
+                  <Checkbox id="checkbox4" />
+                </div>
 
                 <div className={styles.textX}>
                   <h4 className={styles.titleX}>Широкий коридор</h4>
@@ -126,7 +128,9 @@ export const Rooms = () => {
               </div>
 
               <div className={styles.checkboxes}>
-                <Checkbox id="checkbox5" />
+                <div className={styles.checkbox1}>
+                  <Checkbox id="checkbox5" />
+                </div>
 
                 <div className={styles.textY}>
                   <h4 className={styles.titleX}>Помощник для инвалидов</h4>

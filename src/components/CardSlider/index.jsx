@@ -19,7 +19,9 @@ export const CardSlider = () => {
       <div className={styles.title}>
         <div className={styles.wrapper}>
           <div className={styles.title4}>
-            <h4 className={styles.title1}>№888</h4>
+            <h4 className={styles.texts}>№</h4>
+            <h4 className={styles.title1}>888</h4>
+
             <h4 className={styles.title2}>люкс</h4>
           </div>
 

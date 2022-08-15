@@ -12,22 +12,37 @@
   line-height: 14px;
   width: 203px;
   color: rgba(31, 32, 65, 0.5);
+  margin-top: 5px;
 }
 .checkboxes {
   display: flex;
+  position: relative;
+}
+.checkbox {
+  position: absolute;
+}
+.checkbox1 {
+  position: absolute;
+  top: -3px;
 }
 .title {
   padding-bottom: 17px;
 }
 .textX {
-  margin-bottom: 11px;
+  margin-bottom: 10px;
+  margin-top: 4px;
+  margin-left: 28px;
+}
+.textY {
+  margin-left: 28px;
 }
 .titleS {
-  width: 236px;
+  width: 224px;
   font-weight: 400;
   font-size: 12px;
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
+  margin-top: 6px;
 }
 .titleB {
   margin-bottom: 5px;
@@ -58,7 +73,7 @@
 
   text-transform: uppercase;
   margin-top: 30px;
-  margin-bottom: 17.12px;
+  margin-bottom: 14px;
   color: #1f2041;
 }
 .titleF {
@@ -67,13 +82,20 @@
   line-height: 15px;
 
   text-transform: uppercase;
-  margin-top: 30px;
-  margin-bottom: 16px;
+  margin-top: 25px;
+  margin-bottom: 13px;
   color: #1f2041;
 }
 .textA {
   margin-top: 30.44px;
   margin-bottom: 4.56px;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #1f2041;
 }
 .CheckboxList {
   margin-top: 30px;
@@ -101,7 +123,7 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 19px;
+  margin-bottom: 8px;
   color: #1f2041;
 }
 .pagination {

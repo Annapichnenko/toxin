@@ -30,7 +30,7 @@ export const RegistrationForm = () => {
       </div>
       <div className={styles.button1}>
         <Button
-          text="Перейти к оплате"
+          text="зарегистрироваться"
           bigButton={true}
           isIcons={true}
           color="white"

@@ -6,7 +6,7 @@
 .radioButton:checked + .radioLabel,
 .radioButton:not(:checked) + .radioLabel {
   position: relative;
-  padding-left: 28px;
+  padding-left: 30px;
   cursor: pointer;
   line-height: 20px;
   display: inline-block;
@@ -47,7 +47,7 @@
   border-radius: 10px;
   position: absolute;
   top: 4px;
-  left: 4px;
+  left: 2px;
 
   -webkit-transition: all 0.2s ease;
   transition: all 0.2s ease;
@@ -61,4 +61,15 @@
   opacity: 1;
   -webkit-transform: scale(1);
   transform: scale(1);
+}
+.radio {
+  display: flex;
+  justify-content: space-between;
+}
+.radioLabel {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+
+  color: rgba(31, 32, 65, 0.75);
 }

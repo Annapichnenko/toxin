@@ -20,22 +20,24 @@
 .title1 {
   font-weight: 700;
   font-size: 20px;
-  line-height: 17px;
 
+  margin-left: 4px;
   color: #1f2041;
 }
 .title2 {
   font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
+  margin-top: 4px;
   text-transform: uppercase;
   color: #bc9cff;
   padding-top: 4px;
+  margin-left: 6px;
 }
 .title3 {
   font-weight: 700;
   font-size: 14px;
-  line-height: 18px;
+  margin-top: 5px;
+  margin-right: 2px;
   color: rgba(31, 32, 65, 0.5);
 }
 .title4 {
@@ -46,8 +48,8 @@
 }
 .span {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
+  font-size: 12px;
+  margin-top: 5px;
   white-space: nowrap;
   margin-left: 3px;
   color: rgba(31, 32, 65, 0.75);
@@ -61,14 +63,14 @@
 }
 .text {
   font-size: 14px;
-  line-height: 18px;
+
   margin-right: 5px;
   color: rgba(31, 32, 65, 0.5);
 }
 .span1 {
   font-weight: 400;
   font-size: 14px;
-  line-height: 24px;
+
   color: rgba(31, 32, 65, 0.75);
 }
 .rate1 {
@@ -80,4 +82,10 @@
   margin-left: auto;
   align-items: center;
   margin-right: 20px;
+}
+.texts {
+  font-weight: 700;
+  font-size: 13px;
+  margin-top: 5px;
+  color: #1f2041;
 }
