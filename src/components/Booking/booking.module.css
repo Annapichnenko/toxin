@@ -15,6 +15,8 @@
   font-size: 24px;
   line-height: 17px;
   color: #1f2041;
+  margin-top: 4px;
+  margin-left: -5px;
 }
 .title1 {
   font-weight: 700;
@@ -22,13 +24,15 @@
   line-height: 15px;
   text-transform: uppercase;
   color: #bc9cff;
-  margin-top: 5px;
+  margin-top: 10px;
+  margin-left: -2px;
 }
 .title2 {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.5);
   display: flex;
   column-gap: 2px;
+  margin-top: 9px;
 }
 .title3 {
   display: flex;
@@ -63,6 +67,8 @@
   color: rgba(31, 32, 65, 0.75);
   padding-bottom: 10px;
   justify-content: space-between;
+  margin-left: 1px;
+  margin-top: -2px;
 }
 .part5 {
   font-weight: 400;
@@ -97,6 +103,7 @@
 }
 .icon2 {
   display: flex;
+  margin-left: 5px;
 }
 .parted {
   font-weight: 100;
@@ -137,11 +144,11 @@
   padding-bottom: 30px;
 }
 .text {
-  padding-bottom: 5px;
+  margin-top: -18px;
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
-
+  margin-bottom: 5px;
   text-transform: uppercase;
 
   color: #1f2041;
@@ -154,7 +161,8 @@
 .texts {
   font-size: 12px;
   font-weight: 400;
-  margin-top: 3px;
+  margin-top: 1px;
+  margin-right: -1px;
 }
 .parti {
   font-weight: 400;
@@ -162,15 +170,17 @@
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
   justify-content: space-between;
+  margin-right: -2px;
+  margin-top: -2px;
 }
 .partes {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-  text-align: right;
+
   color: rgba(31, 32, 65, 0.75);
   justify-content: space-between;
-  margin-left: 57px;
+  margin-right: -2px;
 }
 .parted {
 }
@@ -180,4 +190,16 @@
   line-height: 18px;
 
   color: rgba(31, 32, 65, 0.75);
+}
+.span {
+  font-size: 14px;
+  font-weight: 700;
+
+  line-height: 17px;
+
+  color: #1f2041;
+  margin-top: 8px;
+}
+.app {
+  margin-left: 59px;
 }
