@@ -13,7 +13,7 @@ export const Logotip = () => {
     <div onClick={handleClick} className={styles.log}>
       <img src={logo} />
 
-      <img src={toxin} />
+      <img className={styles.text} src={toxin} />
     </div>
   );
 };

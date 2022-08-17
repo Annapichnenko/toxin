@@ -25,12 +25,12 @@ export const Header = ({ isLogin, isLogotip }) => {
         </div>
       ) : (
         <div className={styles.buttons}>
-          <Button text="Войти" onClick={handleClick} withFrame={true} />
+          <Button text="Войти" onClick={handleClick} loginButton={true} />
 
           <Button
             text="Зарегистрироваться"
             onClick={handleClickRec}
-            bigButton={true}
+            loginBigButton={true}
           ></Button>
         </div>
       )}

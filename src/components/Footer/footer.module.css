@@ -4,43 +4,52 @@
   font-size: 14px;
   line-height: 24px;
   color: rgba(31, 32, 65, 0.75);
+  margin-top: -2px;
 }
 .foot {
   display: flex;
   row-gap: 25px;
   flex-direction: column;
   color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  margin-left: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }
 .footer {
   display: flex;
-  column-gap: 100px;
+  margin-right: 50px;
+  margin-bottom: 16px;
 }
 .logo {
   width: 75px;
+  margin-top: -11px;
 }
 .text1 {
   display: flex;
-  gap: 10px;
+
   flex-direction: column;
 }
 .text2 {
-  display: flex;
-  flex-direction: column;
+  font-weight: 700;
+  font-size: 12px;
 }
 .title {
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
   font-weight: 700;
-
+  text-transform: uppercase;
   color: #1f2041;
+  font-size: 12px;
+  margin-bottom: -6px;
+  margin-left: 40px;
 }
 .header {
   display: flex;
   align-items: center;
-  justify-content: center;
   height: 372px;
-  padding-top: 18px;
+  padding-left: 140px;
 }
 .title2 {
   width: 220px;
@@ -71,4 +80,71 @@
 }
 .border {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
+}
+.textY {
+  margin-top: 20px;
+}
+.dt {
+  margin-top: 28px;
+}
+.dt1 {
+  margin-bottom: -6px;
+}
+.dt2 {
+  margin-top: -11px;
+}
+.dt3 {
+  margin-top: -6px;
+}
+.titleX {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1f2041;
+  margin-left: 58px;
+  margin-bottom: -6px;
+}
+.titleB {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1f2041;
+  font-size: 12px;
+  margin-bottom: -6px;
+  margin-left: 110px;
+}
+.titleD {
+  margin: 0;
+  padding: 0;
+  margin-bottom: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #1f2041;
+  font-size: 12px;
+  margin-bottom: -6px;
+  margin-left: 52px;
+}
+.foot1 {
+  display: flex;
+  row-gap: 25px;
+  flex-direction: column;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  margin-left: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+.foot2 {
+  display: flex;
+  row-gap: 25px;
+  flex-direction: column;
+  color: rgba(31, 32, 65, 0.5);
+  font-size: 14px;
+  margin-left: 40px;
+  font-weight: 400;
+  margin-bottom: 20px;
 }

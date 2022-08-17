@@ -2,32 +2,33 @@
   color: rgba(31, 32, 65, 0.75);
   padding: 0;
   margin: 0;
-  margin-left: 9px;
+  margin-left: 10px;
+  font-size: 14px;
 }
 .p {
   padding: 0;
   margin: 0;
   color: rgba(31, 32, 65, 0.75);
   margin-left: 9px;
-  margin-top: 5px;
+  margin-top: 6px;
+  font-size: 14px;
 }
 .title {
-  font-size: 15px;
   color: rgba(31, 32, 65, 0.75);
-  width: 700px;
-  padding: 0;
-  margin: 0;
-  margin-left: 10px;
+  width: 655px;
+  line-height: 24px;
+  margin-left: 15px;
+  font-size: 14px;
 }
 .like {
   display: flex;
-  align-items: flex-start;
-  margin-bottom: 40px;
-  margin-top: 10px;
+  margin-top: 8px;
+  font-size: 14px;
 }
 .image {
   padding: 0;
   margin: 0;
+  box-sizing: border-box;
   width: 48px;
   border-radius: 32px;
   border: 2px solid #fff;

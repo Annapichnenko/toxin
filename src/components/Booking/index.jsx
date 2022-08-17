@@ -10,7 +10,8 @@ export const Booking = () => {
     <div className={styles.book}>
       <div className={styles.title4}>
         <div className={styles.title3}>
-          <h4 className={styles.title}>№888</h4>
+          <span className={styles.span}>№</span>
+          <h4 className={styles.title}>888</h4>
           <h4 className={styles.title1}>Люкс</h4>
         </div>
         <div>
@@ -53,8 +54,9 @@ export const Booking = () => {
           <h4 className={styles.middle}>Сбор за услуги: скидка 2 179₽</h4>
           <div className={styles.icon1}>
             <img src={icon} />
-
-            <h4 className={styles.partes}>0₽</h4>
+            <div className={styles.app}>
+              <h4 className={styles.partes}>0₽</h4>
+            </div>
           </div>
         </div>
         <div className={styles.icon2}>
@@ -67,7 +69,7 @@ export const Booking = () => {
         <h4 className={styles.part8}>услуги</h4>
       </div>
       <div className={styles.book2}>
-        <h4 className={styles.parts}>Итог</h4>
+        <h4 className={styles.parts}>Итого</h4>
         <div className={styles.book1}> </div>
         <h4 className={styles.parte}>38 081₽</h4>
       </div>

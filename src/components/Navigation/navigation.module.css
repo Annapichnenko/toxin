@@ -1,14 +1,16 @@
 .navigation {
   color: rgba(31, 32, 65, 0.5);
   display: flex;
-  gap: 20px;
+  font-size: 14px;
+  justify-content: space-between;
+  margin-left: 87px;
 }
 .dt {
-  font-size: 17px;
+  font-size: 14px;
   text-decoration: none;
   list-style: none;
   position: relative;
-  padding-right: 20px;
+  margin-right: 20px;
 }
 .dt:before {
   background-image: url("./nav.svg");
@@ -17,15 +19,14 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  left: 65px;
+  margin-left: 58px;
   top: 6px;
 }
 .dt1 {
-  font-size: 17px;
+  font-size: 14px;
   text-decoration: none;
   list-style: none;
   position: relative;
-  padding-right: 20px;
 }
 .dt1[open] .dt1:before {
   transform: rotate(180deg);
@@ -38,6 +39,17 @@
   width: 20px;
   height: 20px;
   background-repeat: no-repeat;
-  left: 115px;
+  margin-left: 97px;
   top: 6px;
+}
+.text {
+  padding-right: 20px;
+}
+.texts {
+  margin-right: 17px;
+  margin-left: 25px;
+}
+.title {
+  margin-right: 20px;
+  margin-left: 5px;
 }

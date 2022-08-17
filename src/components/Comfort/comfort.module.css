@@ -1,29 +1,20 @@
 .comfort {
   display: flex;
-  column-gap: 10px;
-  align-items: center;
-  border-bottom: 1px solid rgba(31, 32, 65, 0.1);
-  padding-bottom: 17px;
   width: 260px;
-  margin-top: 23px;
+  margin-left: 3px;
 }
 .title1 {
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  width: 233px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  margin: 0;
+
+  margin-left: 17px;
   font-weight: 700;
 }
 .title2 {
+  margin-top: 8px;
   font-size: 14px;
   color: rgba(31, 32, 65, 0.75);
-  width: 233px;
-  display: flex;
-  flex-direction: column;
-  row-gap: 8px;
-  margin: 0;
+
   font-weight: 400;
+  margin-left: 17px;
 }

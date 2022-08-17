@@ -24,7 +24,7 @@ export const RoomDetails = () => {
     },
     {
       id: "list13",
-      text: "Время прибытия - после 13:00, а выезд до 12:00",
+      text: "Время прибытия — после 13:00, а выезд до 12:00",
     },
   ];
   return (
@@ -45,21 +45,27 @@ export const RoomDetails = () => {
                 <div className={styles.content}>
                   <div className={styles.comfort}>
                     <h4 className={styles.title}>Сведения о номере</h4>
-                    <Comfort
-                      title="Комфорт"
-                      text="Шумопоглощающие стены"
-                      image={comfort1}
-                    />
-                    <Comfort
-                      title="Удобство"
-                      text="Окно в каждой из спален"
-                      image={comfort2}
-                    />
-                    <Comfort
-                      title="Уют"
-                      text="Номер оснащён камином"
-                      image={comfort3}
-                    />
+                    <div className={styles.comfort1}>
+                      <Comfort
+                        title="Комфорт"
+                        text="Шумопоглощающие стены"
+                        image={comfort1}
+                      />
+                    </div>
+                    <div className={styles.comfort2}>
+                      <Comfort
+                        title="Удобство"
+                        text="Окно в каждой из спален"
+                        image={comfort2}
+                      />
+                    </div>
+                    <div className={styles.comfort3}>
+                      <Comfort
+                        title="Уют"
+                        text="Номер оснащён камином"
+                        image={comfort3}
+                      />
+                    </div>
                   </div>
                   <div className={styles.graph}>
                     <h4 className={styles.title1}>Впечатления от номера</h4>
@@ -70,6 +76,7 @@ export const RoomDetails = () => {
                   <h4 className={styles.text}>Отзывы посетителей номера</h4>
                   <h4 className={styles.text1}>2 отзыва</h4>
                 </div>
+
                 <Comment
                   title="Мурад Сарафанов"
                   subtitle="5 дней назад"
@@ -77,13 +84,15 @@ export const RoomDetails = () => {
                   image={murad}
                   number={12}
                 />
-                <Comment
-                  title="Патрисия Стёклышкова"
-                  subtitle="Неделю назад"
-                  text="Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
-                  image={patrisia}
-                  number={2}
-                />
+                <div className={styles.comments}>
+                  <Comment
+                    title="Патрисия Стёклышкова"
+                    subtitle="Неделю назад"
+                    text="Обслуживание на высоте! Всё аккуратно, чисто. Завтраки в номер советую заказать, каждый день новое блюдо и десерт как комплимент"
+                    image={patrisia}
+                    number={2}
+                  />
+                </div>
                 <div className={styles.ul}>
                   <div className={styles.ul1}>
                     <h4 className={styles.li}>Правила</h4>

@@ -23,7 +23,7 @@ export const Graph = () => {
         <div className={styles.count}>260</div>
         <div className={styles.text}>голосов</div>
       </div>
-      <PieChart width={170} height={170}>
+      <PieChart width={120} height={120}>
         <defs>
           <linearGradient id="good" x1=".5" x2=".5" y2="1">
             <stop className={styles.goodStart} />
@@ -43,8 +43,8 @@ export const Graph = () => {
           dataKey="value"
           cx="50%"
           cy="50%"
-          innerRadius={65}
-          outerRadius={70}
+          innerRadius={55}
+          outerRadius={60}
           paddingAngle={2}
           fill="#82ca9d"
         >

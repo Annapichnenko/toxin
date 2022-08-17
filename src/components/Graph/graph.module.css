@@ -34,30 +34,27 @@
 }
 .graph {
   position: relative;
+  padding-top: 22px;
+  padding-left: 14px;
 }
 .wrapper {
   position: absolute;
-  margin-left: 55px;
-  margin-top: 55px;
+  margin-left: 30px;
+  margin-top: 35px;
+  text-align: center;
 }
 .count {
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
 
-  display: flex;
-  align-items: center;
-  text-align: center;
-
   color: #bc9cff;
-  margin-left: 10px;
 }
 .text {
   font-weight: 700;
   font-size: 12px;
   line-height: 15px;
 
-  text-align: center;
   text-transform: uppercase;
 
   color: #bc9cff;

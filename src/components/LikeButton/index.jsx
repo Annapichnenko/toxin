@@ -61,7 +61,7 @@ export const LikeButton = ({ number }) => {
           </svg>
         )}
       </div>
-      <span className={styles.number}>{count}</span>
+      <div className={styles.number}>{count}</div>
     </div>
   );
 };

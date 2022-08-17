@@ -8,9 +8,11 @@ export const Button = ({
   withFrame,
   withoutFrame,
   blackButton,
+  loginButton,
   bigButton,
   isIcons,
   color,
+  loginBigButton,
 
   ...props
 }) => {
@@ -25,7 +27,8 @@ export const Button = ({
        ${withoutFrame && styles.withoutFrame}
        ${blackButton && styles.blackButton}
        ${bigButton && styles.bigButton}
-       
+       ${loginButton && styles.loginButton}
+       ${loginBigButton && styles.loginBigButton}
        `}
       >
         {text}

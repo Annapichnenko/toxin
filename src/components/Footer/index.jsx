@@ -13,40 +13,43 @@ export const Footer = ({ withFooterBorder }) => {
             <div className={styles.logo}>
               <Logotip />
             </div>
-            <p className={styles.text}>
-              Бронирование номеров в лучшем отеле 2019 года по версии ассоциации
-              «Отельные взгляды»
-            </p>
+
+            <div className={styles.textY}>
+              <p className={styles.text}>
+                Бронирование номеров в лучшем отеле 2019 года по версии
+                ассоциации «Отельные взгляды»
+              </p>
+            </div>
           </div>
-          <div className={styles.text2}>
+          <div className={styles.text1}>
             <h4 className={styles.title}>Навигация</h4>
             <dl className={styles.foot}>
               <dt className={styles.dt}>О нас</dt>
               <dt className={styles.dt1}>Новости</dt>
               <dt className={styles.dt2}>Служба поддержки</dt>
-              <dt>Услуги</dt>
+              <dt className={styles.dt3}>Услуги</dt>
             </dl>
           </div>
           <div className={styles.text2}>
-            <h4 className={styles.title}>О нас</h4>
-            <dl className={styles.foot}>
-              <dt className={styles.dt}>О сервисе</dt>
-              <dt className={styles.dt1}>Наша команда</dt>
-              <dt className={styles.dt2}>Вакансии</dt>
+            <h4 className={styles.titleX}>О нас</h4>
+            <dl className={styles.foot1}>
+              <dt className={styles.dt4}>О сервисе</dt>
+              <dt className={styles.dt5}>Наша команда</dt>
+              <dt className={styles.dt6}>Вакансии</dt>
               <dt>Инвесторы</dt>
             </dl>
           </div>
-          <div className={styles.text2}>
-            <h4 className={styles.title}>Служба поддержки</h4>
-            <dl className={styles.foot}>
-              <dt className={styles.dt}>Соглашения</dt>
-              <dt className={styles.dt1}>Сообщества</dt>
-              <dt className={styles.dt2}>Связь с нами</dt>
+          <div className={styles.text3}>
+            <h4 className={styles.titleB}>Служба поддержки</h4>
+            <dl className={styles.foot2}>
+              <dt className={styles.dt7}>Соглашения</dt>
+              <dt className={styles.dt8}>Сообщества</dt>
+              <dt className={styles.dt9}>Связь с нами</dt>
             </dl>
           </div>
-          <div className={styles.text2}>
+          <div className={styles.text4}>
             <div className={styles.title1}>
-              <h4 className={styles.title}>Подписка</h4>
+              <h4 className={styles.titleD}>Подписка</h4>
               <p className={styles.title2}>
                 Получайте специальные предложения и новости сервиса
               </p>
