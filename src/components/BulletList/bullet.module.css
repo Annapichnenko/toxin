@@ -1,8 +1,10 @@
 .bullet {
-  margin-left: 10px;
+  margin-left: 11px;
 }
 .ul {
   color: rgba(31, 32, 65, 0.25);
+
+  margin-left: -1px;
 }
 
 .li {
@@ -16,7 +18,8 @@
   list-style: none;
   position: relative;
   color: rgba(31, 32, 65, 0.75);
-  padding-left: 10px;
+
+  padding-left: 9px;
 }
 .li:before {
   content: "";

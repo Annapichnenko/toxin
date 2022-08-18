@@ -36,7 +36,13 @@
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  position: relative;
 }
 .button {
-  margin-top: 30px;
+  margin-top: 74px;
+}
+.drop {
+  position: absolute;
+  z-index: 2;
+  top: 19px;
 }

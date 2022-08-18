@@ -9,6 +9,7 @@ export const DropDown = ({
   array,
   array1,
   array2,
+  dropDownBig,
 }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [count, setCount] = useState(0);
@@ -77,12 +78,19 @@ export const DropDown = ({
     setCount2(0);
   };
   return (
-    <div className={styles.input}>
+    <div className={`${styles.input} ${dropDownBig && styles.dropDownBig}`}>
       <span className={styles.icon} onClick={() => setIsOpen(!isOpen)}></span>
-      <input value={value} className={styles.date} />
+      <input
+        value={value}
+        className={`${styles.date} ${dropDownBig && styles.dropDownBig}`}
+      />
 
       {isOpen ? (
-        <div className={`${styles.down} ${isButtons && styles.height}`}>
+        <div
+          className={`${styles.down} ${isButtons && styles.height}  ${
+            dropDownBig && styles.dropDownBig
+          }`}
+        >
           <div className={styles.items}>
             <span className={styles.title}>{text1}</span>
             <div>

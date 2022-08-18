@@ -7,8 +7,8 @@ export const SignUp = () => {
     <form className={styles.sign}>
       <h2 className={styles.title}>Войти</h2>
       <div className={styles.signUp}>
-        <Input color="#BC9CFF" />
-        <Input placeholder="Пароль" color="#BC9CFF" />
+        <Input inputBig color="#BC9CFF" />
+        <Input inputBig placeholder="Пароль" color="#BC9CFF" />
         <div className={styles.button}>
           <Button text="Войти" bigButton={true} isIcons={true} color="white" />
         </div>

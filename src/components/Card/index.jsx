@@ -2,6 +2,7 @@ import React from "react";
 import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import { DateCalendar } from "../DateCalendar";
+import { DropDown } from "../DropDown";
 import { Input } from "../Input";
 import styles from "./card.module.css";
 export const Card = () => {
@@ -24,7 +25,18 @@ export const Card = () => {
       </div>
       <div className={styles.input}>
         <h4 className={styles.text}>гости</h4>
-        <Input placeholder="Имя" color="#BC9CFF" />
+        <div className={styles.drop}>
+          <DropDown
+            dropDownBig
+            array={["взрослый", "взрослых", "взрослые"]}
+            array1={["ребенок", "ребенка", "детей"]}
+            array2={["младенец", "младенца", "младенцев"]}
+            text1="взрослые"
+            text2="дети"
+            text3="младенцы"
+            title="сколько гостей"
+          />
+        </div>
       </div>
       <div className={styles.button}>
         <Button

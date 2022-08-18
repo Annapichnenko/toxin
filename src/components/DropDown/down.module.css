@@ -96,3 +96,6 @@
   display: flex;
   justify-content: space-between;
 }
+.dropDownBig {
+  width: 320px;
+}

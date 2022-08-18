@@ -15,9 +15,10 @@ export const Booking = () => {
           <h4 className={styles.title1}>Люкс</h4>
         </div>
         <div>
-          <h4 className={styles.title2}>
-            9 990₽ <h4 className={styles.texts}>в сутки</h4>
-          </h4>
+          <div className={styles.bookek}>
+            <h4 className={styles.title2}>9 990₽</h4>
+            <h4 className={styles.texts}>в сутки</h4>
+          </div>
         </div>
       </div>
       <div className={styles.part2}>

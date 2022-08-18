@@ -45,26 +45,28 @@ export const RoomDetails = () => {
                 <div className={styles.content}>
                   <div className={styles.comfort}>
                     <h4 className={styles.title}>Сведения о номере</h4>
-                    <div className={styles.comfort1}>
-                      <Comfort
-                        title="Комфорт"
-                        text="Шумопоглощающие стены"
-                        image={comfort1}
-                      />
-                    </div>
-                    <div className={styles.comfort2}>
-                      <Comfort
-                        title="Удобство"
-                        text="Окно в каждой из спален"
-                        image={comfort2}
-                      />
-                    </div>
-                    <div className={styles.comfort3}>
-                      <Comfort
-                        title="Уют"
-                        text="Номер оснащён камином"
-                        image={comfort3}
-                      />
+                    <div className={styles.comfort4}>
+                      <div className={styles.comfort1}>
+                        <Comfort
+                          title="Комфорт"
+                          text="Шумопоглощающие стены"
+                          image={comfort1}
+                        />
+                      </div>
+                      <div className={styles.comfort2}>
+                        <Comfort
+                          title="Удобство"
+                          text="Окно в каждой из спален"
+                          image={comfort2}
+                        />
+                      </div>
+                      <div className={styles.comfort3}>
+                        <Comfort
+                          title="Уют"
+                          text="Номер оснащён камином"
+                          image={comfort3}
+                        />
+                      </div>
                     </div>
                   </div>
                   <div className={styles.graph}>
