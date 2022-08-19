@@ -35,6 +35,7 @@ export const Booking = () => {
         <h4 className={styles.part3}>Гости</h4>
         <div className={styles.drop}>
           <DropDown
+            dropDownBig
             array={["взрослый", "взрослых", "взрослые"]}
             array1={["ребенок", "ребенка", "детей"]}
             array2={["младенец", "младенца", "младенцев"]}

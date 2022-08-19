@@ -101,6 +101,7 @@
 .ul {
   display: flex;
   flex-direction: row;
+  margin-bottom: -8px;
 }
 .ul2 {
   margin-left: 110.5px;

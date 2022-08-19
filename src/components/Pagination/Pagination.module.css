@@ -1,8 +1,9 @@
 .pagination {
   display: flex;
   justify-content: left;
-
+  margin-left: 13px;
   list-style-type: none;
+  margin-bottom: 8px;
 }
 
 .pageLink {
@@ -12,9 +13,9 @@
   align-items: center;
   width: 2.3125rem;
   height: 2.3125rem;
-  font-weight: 400;
+
   font-size: 12px;
-  line-height: 15px;
+  margin-left: 2px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -24,18 +25,24 @@
 }
 
 .pageItemActive .pageLink {
-  font-weight: 500;
+  font-weight: 502;
   color: white;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
+  height: 40px;
+  width: 41px;
+  margin-left: -16px;
+  font-size: 12px;
 }
 .button {
   border: none;
   outline: none;
-  width: 40px;
+  width: 39px;
   height: 40px;
   background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
   border-radius: 22px;
+
+  margin-left: 5px;
 }
 .wrapper {
   position: relative;
@@ -51,12 +58,13 @@
   width: 40px;
   position: absolute;
   top: 0;
-  left: 0;
+
+  left: 3px;
 }
 .title {
   font-weight: 400;
   font-size: 14px;
   line-height: 24px;
-
+  margin-left: 15px;
   color: rgba(31, 32, 65, 0.75);
 }

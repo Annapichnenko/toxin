@@ -3,8 +3,9 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 18px;
-
+  margin-left: 2px;
   color: rgba(31, 32, 65, 0.75);
+  margin-top: 1px;
 }
 .titleY {
   font-weight: 400;
@@ -13,6 +14,7 @@
   width: 203px;
   color: rgba(31, 32, 65, 0.5);
   margin-top: 5px;
+  margin-left: 2px;
 }
 .checkboxes {
   display: flex;
@@ -43,15 +45,25 @@
   line-height: 14px;
   color: rgba(31, 32, 65, 0.5);
   margin-top: 6px;
+  margin-left: 2px;
 }
 .titleB {
   margin-bottom: 5px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: -1px;
 }
 .titleC {
   margin-bottom: 4.56px;
+  font-weight: 700;
+  font-size: 12px;
+  text-transform: uppercase;
+  margin-top: -1px;
 }
 .titleE {
   margin-bottom: 20px;
+  margin-top: -1px;
 }
 .textC {
   font-weight: 400;
@@ -101,7 +113,7 @@
   margin-top: 30px;
 }
 .column {
-  margin-top: 30px;
+  margin-top: 33px;
 }
 .rommSlider {
   margin-left: 140px;
@@ -113,7 +125,7 @@
   display: flex;
   flex-wrap: wrap;
   column-gap: 13px;
-  row-gap: 15px;
+  row-gap: 21px;
 }
 .sliders {
   margin-left: 60px;
@@ -123,11 +135,13 @@
   font-weight: 700;
   font-size: 24px;
   line-height: 29px;
-  margin-bottom: 8px;
+
   color: #1f2041;
+  margin-bottom: 24px;
 }
 .pagination {
   margin-left: 30%;
-  margin-top: 40.94px;
-  margin-bottom: 70px;
+
+  margin-top: 39.94px;
+  margin-bottom: 73px;
 }

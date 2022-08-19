@@ -5,11 +5,13 @@
   border-radius: 4px;
   width: 380px;
   height: 646px;
-  padding-left: 30px;
+
   padding-right: 30px;
   padding-top: 40px;
   padding-bottom: 44px;
   box-sizing: border-box;
+
+  padding-left: 29px;
 }
 .reg {
   font-weight: 700;
@@ -26,7 +28,8 @@
   display: flex;
   gap: 20px;
   flex-direction: row;
-  margin-top: 10px;
+
+  margin-top: 8px;
 }
 .label {
   margin-bottom: 6px;
