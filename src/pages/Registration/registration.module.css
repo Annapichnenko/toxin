@@ -1,0 +1,18 @@
+.wrapper {
+  background-image: url("./imageses.jpg");
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+
+  background-position: bottom;
+  height: 684px;
+}
+.container {
+  display: flex;
+
+  padding-top: 19px;
+  padding-left: 533px;
+  height: 684px;
+}

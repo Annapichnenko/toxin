@@ -63,11 +63,206 @@
 }
 .footer {
   margin-top: 100px;
-  margin-bottom: 10000px;
+  margin-bottom: 100px;
 }
 body {
-  background-color: #e5e5e5;
+  background-color: #ffffff;
 }
 .form {
   margin-top: 150px;
+}
+.comfort {
+  margin-top: 150px;
+  display: flex;
+  gap: 17px;
+  flex-direction: column;
+}
+.card {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.date {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+.down {
+  margin-bottom: 100px;
+  margin-left: 30px;
+}
+.slider {
+  padding: 20.44px;
+}
+
+.sliders {
+  margin-bottom: 500px;
+  display: flex;
+  column-gap: 50px;
+}
+.item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  user-select: none;
+}
+
+.item-1 {
+  background-image: url("../../components/Carosel/image.jpg");
+}
+.item-2 {
+  background-image: url("../../components/Carosel/image1.jpg");
+}
+.item-3 {
+  background-image: url("../../components/Carosel/image2.jpg");
+}
+.item-4 {
+  background-image: url("../../components/Carosel/image3.jpg");
+}
+.item-5 {
+  background-image: url("../../components/Carosel/image4.jpg");
+}
+.item-6 {
+  background-image: url("../../components/Carosel/image5.jpg");
+}
+.item-7 {
+  background-image: url("../../components/Carosel/image6.jpg");
+}
+.item-8 {
+  background-image: url("../../components/Carosel/image7.jpg");
+}
+.card-slider {
+  padding: 100px;
+}
+.pagination {
+  padding: 100px;
+}
+.rating {
+  padding: 100px;
+}
+
+/* calendar */
+
+.react-datepicker__year-read-view--down-arrow,
+.react-datepicker__month-read-view--down-arrow,
+.react-datepicker__month-year-read-view--down-arrow,
+.react-datepicker__navigation-icon::before {
+}
+
+.react-datepicker-popper[data-placement^="bottom"] .react-datepicker__triangle {
+  top: 0;
+  margin-top: -8px;
+}
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before,
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::after {
+  border-top: none;
+  border-bottom-color: red;
+}
+
+.react-datepicker-popper[data-placement^="bottom"]
+  .react-datepicker__triangle::before {
+  top: -1px;
+  border-bottom-color: red;
+}
+
+.react-datepicker {
+  width: 320px;
+  height: 369px;
+
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  box-shadow: 0px 10px 20px rgba(31, 32, 65, 0.05);
+  border-radius: 4px;
+}
+
+.react-datepicker-popper {
+  z-index: 1;
+}
+.react-datepicker-popper[data-placement^="bottom"] {
+  padding-top: 10px;
+}
+
+.react-datepicker__current-month,
+.react-datepicker-time__header,
+.react-datepicker-year-header {
+  font-weight: 700;
+  font-size: 19px;
+  line-height: 23px;
+
+  text-align: center;
+
+  color: #1f2041;
+}
+
+.react-datepicker__navigation {
+  cursor: pointer;
+  position: absolute;
+
+  text-indent: -999em;
+
+  border: none;
+  outline: none;
+  width: 23.93px;
+  height: 23px;
+}
+.react-datepicker__navigation--previous {
+  left: 2px;
+  background-image: url("../../components/DateCalendar/2.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+.react-datepicker__navigation--next {
+  right: 2px;
+  background-image: url("../../components/DateCalendar/1.svg");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+}
+
+.react-datepicker__day-names,
+.react-datepicker__week {
+  white-space: nowrap;
+}
+
+.react-datepicker__day-name,
+.react-datepicker__day,
+.react-datepicker__time-name {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 15px;
+
+  color: rgba(31, 32, 65, 0.5);
+  display: inline-block;
+  width: 1.7rem;
+  line-height: 1.7rem;
+  text-align: center;
+  margin: 0.166rem;
+}
+
+.react-datepicker__day-name {
+  color: #bc9cff;
+}
+
+.react-datepicker__day,
+.react-datepicker__month-text,
+.react-datepicker__quarter-text,
+.react-datepicker__year-text {
+  cursor: pointer;
+}
+.react-datepicker__day:hover,
+.react-datepicker__month-text:hover,
+.react-datepicker__quarter-text:hover,
+.react-datepicker__year-text:hover {
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+}
+
+.react-datepicker__day--keyboard-selected,
+.react-datepicker__month-text--keyboard-selected,
+.react-datepicker__quarter-text--keyboard-selected,
+.react-datepicker__year-text--keyboard-selected {
+  background: linear-gradient(180deg, #6fcf97 0%, #66d2ea 100%);
+  border-radius: 22px;
+  color: #fff;
 }

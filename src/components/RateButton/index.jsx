@@ -11,7 +11,7 @@ export const RateButton = () => {
   const id4 = getRandomInt(128);
   const id5 = getRandomInt(176);
   return (
-    <div>
+    <>
       <div className={styles.stars}>
         <input
           className={styles.input}
@@ -65,6 +65,6 @@ export const RateButton = () => {
           5 stars
         </label>
       </div>
-    </div>
+    </>
   );
 };

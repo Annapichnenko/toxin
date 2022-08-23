@@ -5,12 +5,14 @@
   line-height: 15px;
   position: relative;
   width: 210px;
+  text-transform: uppercase;
+  margin-top: 33px;
 }
 .summary::marker {
   content: "";
 }
 .checkboxes {
-  margin-top: 17px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 5px;
@@ -21,10 +23,12 @@
   position: absolute;
   width: 12px;
   height: 12px;
-  right: 0;
+  left: 238px;
   background-position: center center;
   background-repeat: no-repeat;
+  transform: rotate(180deg);
+  top: 1px;
 }
 .details[open] .summary:before {
-  transform: rotate(180deg);
+  transform: rotate(0deg);
 }

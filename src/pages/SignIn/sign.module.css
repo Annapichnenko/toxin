@@ -1,0 +1,11 @@
+.wrapper {
+  background-image: url("./images.jpg");
+
+  background-position: bottom;
+
+  height: 702px;
+}
+.container {
+  padding-left: 531px;
+  padding-top: 12%;
+}

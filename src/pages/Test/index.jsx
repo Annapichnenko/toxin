@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BulletList } from "../../components/BulletList";
 import { Button } from "../../components/Button";
 import { Checkbox } from "../../components/Checkbox";
@@ -21,6 +21,18 @@ import { SocialButton } from "../../components/SocialButton";
 import { Footer } from "../../components/Footer";
 import { FooterMobile } from "../../components/FooterMobile";
 import { RegistrationForm } from "../../components/RegistrationForm";
+import { Comfort } from "../../components/Comfort";
+import comfort1 from "../../components/Comfort/emoticon.svg";
+import comfort2 from "../../components/Comfort/location_city.svg";
+import { Card } from "../../components/Card";
+import { DateCalendar } from "../../components/DateCalendar";
+import { DropDown } from "../../components/DropDown";
+import { Slider } from "../../components/Slider";
+import { Carosel } from "../../components/Carosel";
+import { CardSlider } from "../../components/CardSlider";
+import { Pagination } from "../../components/Pagination/Pagination";
+import { Graph } from "../../components/Graph";
+import { Rating } from "../../components/Rating";
 export const Test = () => {
   const data = [
     {
@@ -114,6 +126,38 @@ export const Test = () => {
       text: "Письменный стол",
     },
   ];
+
+  const [filteredValues, setFilteredValues] = useState([
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 1, 1, 1,
+    1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10,
+  ]);
+  const [pagination, setPagination] = useState({
+    currentPage: 1,
+    current_values: [],
+    totalPages: null,
+    values: [],
+    query: null,
+  });
+
+  const pageLimit = 3;
+  const onPageChanged = ({
+    currentPage,
+    totalPages,
+    pageLimit,
+    filteredVal = filteredValues,
+  }) => {
+    let values = filteredVal;
+
+    let offset = (currentPage - 1) * pageLimit;
+    let current_values = values.slice(offset, offset + pageLimit);
+
+    setPagination({
+      ...pagination,
+      currentPage: currentPage,
+      current_values: current_values,
+      totalPages: totalPages,
+    });
+  };
   return (
     <div>
       <div className="button1">
@@ -221,6 +265,82 @@ export const Test = () => {
       </div>
       <div className="form">
         <RegistrationForm />
+      </div>
+      <div className="comfort">
+        <Comfort
+          title="Комфорт"
+          text="Шумопоглощающие стены"
+          image={comfort1}
+        />
+        <Comfort
+          title="Удобство"
+          text="Окно в каждой из спален"
+          image={comfort2}
+        />
+      </div>
+      <div className="card">
+        <Card />
+      </div>
+      <div className="date">
+        <DateCalendar />
+      </div>
+      <div className="down">
+        <DropDown
+          text1="Спальни"
+          text2="кровати"
+          text3="ванные"
+          title="2 спальни, 2 кровати..."
+          array={["спальня", "спальни", "спален"]}
+          array1={["кровать", "кровати", "кроватей"]}
+          array2={["ванна", "ванны", "ванн"]}
+        />
+        <DropDown
+          array={["взрослый", "взрослых", "взрослые"]}
+          array1={["ребенок", "ребенка", "детей"]}
+          array2={["младенец", "младенца", "младенцев"]}
+          text1="взрослые"
+          text2="дети"
+          text3="младенцы"
+          title="сколько гостей"
+        />
+      </div>
+      <div className="sliders">
+        <Slider title="range-slider" />
+        <Slider title="диапазон цены" />
+      </div>
+      <div className="slider">
+        <Carosel>
+          <div className="item item-1"></div>
+          <div className="item item-2"></div>
+          <div className="item item-3"></div>
+          <div className="item item-4"></div>
+        </Carosel>
+        <Carosel>
+          <div className="item item-5"></div>
+          <div className="item item-6"></div>
+          <div className="item item-7"></div>
+          <div className="item item-8"></div>
+        </Carosel>
+      </div>
+      <div className="card-slider">
+        <CardSlider />
+      </div>
+      <div className="pagination">
+        {pagination.current_values.map((el) => (
+          <span> {el}</span>
+        ))}
+        <Pagination
+          pageLimit={pageLimit}
+          totalRecords={filteredValues.length}
+          onPageChanged={onPageChanged}
+          pageNeighbours={1}
+        />
+      </div>
+      <div className="graph">
+        <Graph />
+      </div>
+      <div className="rating">
+        <Rating />
       </div>
     </div>
   );

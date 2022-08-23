@@ -1,0 +1,102 @@
+.down {
+  width: 266px;
+  height: 119px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 17px;
+  background: #ffffff;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  padding-top: 13px;
+  padding-right: 7px;
+  padding-bottom: 8px;
+  padding-left: 15px;
+}
+.height {
+  height: 159px;
+}
+.title {
+  margin: 0;
+  white-space: nowrap;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+}
+.minus {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  padding-left: 6px;
+  padding-right: 7px;
+
+  color: rgba(31, 32, 65, 0.5);
+  cursor: pointer;
+}
+.number {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+  border: none;
+  outline: none;
+  width: 20px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #1f2041;
+}
+.plus {
+  border: 1px solid rgba(31, 32, 65, 0.25);
+  border-radius: 22px;
+  padding-left: 6px;
+  padding-right: 6px;
+  padding-bottom: 1px;
+  padding-top: 1px;
+  color: rgba(31, 32, 65, 0.5);
+  font-weight: 700;
+  cursor: pointer;
+}
+.items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.date {
+  width: 318px;
+  height: 44px;
+  left: 140px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  color: rgba(31, 32, 65, 0.75);
+  padding-left: 15px;
+  border: 1px solid rgba(31, 32, 65, 0.5);
+  background: #ffffff;
+  margin-top: -3px;
+}
+.icon {
+  background-image: url("./date.svg");
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  top: 9px;
+  right: 10px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 50% 50%;
+  cursor: pointer;
+}
+.input {
+  position: relative;
+  width: 266px;
+}
+.date:focus {
+  outline: none;
+  border: 1px solid rgba(83, 86, 174, 0.5);
+}
+.button {
+  display: flex;
+  justify-content: space-between;
+}
+.dropDownBig {
+  width: 320px;
+}

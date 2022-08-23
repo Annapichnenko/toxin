@@ -1,0 +1,60 @@
+.goodStart {
+  stop-color: rgba(188, 156, 255, 1);
+}
+.goodEnd {
+  stop-color: rgba(139, 164, 249, 1);
+}
+.excellentStart {
+  stop-color: #ffe39c;
+}
+.excellentEnd {
+  stop-color: #ffba9c;
+}
+.okStart {
+  stop-color: rgba(111, 207, 151, 1);
+}
+.okEnd {
+  stop-color: rgba(102, 210, 234, 1);
+}
+
+.excellent {
+  fill: url(#excellent);
+}
+
+.good {
+  fill: url(#good);
+}
+
+.ok {
+  fill: url(#ok);
+}
+
+.poor {
+  fill: url(#poor);
+}
+.graph {
+  position: relative;
+  padding-top: 21px;
+  padding-left: 11px;
+}
+.wrapper {
+  position: absolute;
+  top: 57px;
+  left: 39px;
+}
+.count {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  margin-left: 10px;
+  color: #bc9cff;
+}
+.text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 15px;
+
+  text-transform: uppercase;
+
+  color: #bc9cff;
+}

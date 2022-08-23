@@ -1,5 +1,4 @@
 .input {
-  width: 100%;
   height: 44px;
   background: #ffffff;
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -7,14 +6,21 @@
   color: rgba(31, 32, 65, 0.75);
   padding-left: 15px;
   box-sizing: border-box;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  width: 320px;
 }
 .input::placeholder {
   color: rgba(31, 32, 65, 0.25);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
 }
 
-.input:hover {
+.input:focus {
   border: 1px solid rgba(31, 32, 65, 0.5);
-  color: blue;
+  outline: none;
 }
 
 .wrapper {
@@ -23,6 +29,12 @@
 }
 .icon {
   position: absolute;
-  right: 9px;
+  right: 12px;
   top: 12px;
+}
+.inputSubscribe {
+  width: 261px;
+}
+.inputBig {
+  width: 320px;
 }

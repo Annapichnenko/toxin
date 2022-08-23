@@ -8,13 +8,18 @@ export const Button = ({
   withFrame,
   withoutFrame,
   blackButton,
+  loginButton,
   bigButton,
   isIcons,
   color,
+  loginBigButton,
+
+  ...props
 }) => {
   return (
     <div className={styles.wrapper}>
       <button
+        {...props}
         disabled={disabled}
         className={`${styles.button}
        ${disabled && styles.buttonDisabled}
@@ -22,7 +27,8 @@ export const Button = ({
        ${withoutFrame && styles.withoutFrame}
        ${blackButton && styles.blackButton}
        ${bigButton && styles.bigButton}
-       
+       ${loginButton && styles.loginButton}
+       ${loginBigButton && styles.loginBigButton}
        `}
       >
         {text}

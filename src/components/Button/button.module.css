@@ -7,7 +7,8 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   border: none;
-  padding: 15px 20px;
+  cursor: pointer;
+  padding: 14px 22.5px 15px 20px;
 }
 .buttonDisabled {
   opacity: 0.5;
@@ -21,6 +22,10 @@
   border-radius: 22px;
   background: white;
   border: 2px solid #bc9cff;
+  height: 44px;
+  box-sizing: border-box;
+  width: 99px;
+  padding: 14px 15px 15px 15px;
 }
 .withoutFrame {
   font-family: "Montserrat";
@@ -45,13 +50,14 @@
 }
 .bigButton {
   box-sizing: border-box;
-  width: 320px;
-  height: 44px;
+  width: 318px;
+  height: 43px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
+  font-weight: 700;
   font-size: 12px;
-  line-height: 15px;
-  text-align: center;
+
+  line-height: 16px;
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -63,6 +69,37 @@
 }
 .icon {
   position: absolute;
-  right: 9px;
-  top: 12px;
+  right: 13px;
+  top: 13px;
+}
+.loginButton {
+  font-size: 12px;
+  line-height: 15px;
+  font-weight: 400px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border-radius: 22px;
+  background: white;
+  border: 2px solid #bc9cff;
+  height: 34px;
+  box-sizing: border-box;
+  width: 87px;
+  padding: 9px 10px 10px 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.loginBigButton {
+  box-sizing: border-box;
+  width: 196px;
+  height: 34px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  font-size: 12px;
+  line-height: 15px;
+  padding: 9px 10px 10px 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 2px;
 }

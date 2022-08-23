@@ -11,7 +11,7 @@ export const Checkbox = ({ text, checked, id }) => {
         id={id}
       />
       <label className={styles.checkboxLabel} for={id}>
-        {text}
+        <span className={styles.text}>{text}</span>
       </label>
     </div>
   );
