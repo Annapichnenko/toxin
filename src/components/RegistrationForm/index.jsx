@@ -3,7 +3,7 @@ import { Button } from "../Button";
 import { Input } from "../Input";
 import { RadioButtons } from "../RadioButtons";
 import { Toggle } from "../Toggle";
-import styles from "./form.module.css";
+import styles from "./form.module.scss";
 export const RegistrationForm = () => {
   return (
     <div className={styles.form}>

@@ -2,7 +2,7 @@ import React from "react";
 import { Input } from "../Input";
 import { Logotip } from "../Logotip";
 import { SocialButton } from "../SocialButton";
-import styles from "./footer.module.css";
+import styles from "./footer.module.scss";
 
 export const Footer = ({ withFooterBorder }) => {
   return (

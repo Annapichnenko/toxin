@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import { Button } from "../Button";
 import { Logotip } from "../Logotip";
 import { Navigation } from "../Navigation";
-import styles from "./header.module.css";
+import styles from "./header.module.scss";
 export const Header = ({ isLogin, isLogotip }) => {
   const navigate = useNavigate();
   const handleClickRec = () => {

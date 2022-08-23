@@ -1,7 +1,7 @@
 import React from "react";
 import { Logotip } from "../Logotip";
 import { SocialButton } from "../SocialButton";
-import styles from "./mobile.module.css";
+import styles from "./mobile.module.scss";
 export const FooterMobile = () => {
   return (
     <div className={styles.mobile}>

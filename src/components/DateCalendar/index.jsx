@@ -1,14 +1,14 @@
-import styles from "./date.module.css";
+import styles from "./date.module.scss";
 import React, { useState } from "react";
 import DatePicker from "react-datepicker";
 import { Input } from "../Input";
 
-export const DateCalendar = () => {
+export const DateCalendar = ({ bigCalendar }) => {
   const [startDate, setStartDate] = useState(new Date());
   return (
-    <div className={styles.wrapper}>
+    <div className={`${styles.wrapper} ${bigCalendar && styles.bigCalendar}`}>
       <DatePicker
-        className={styles.calendar}
+        className={`${styles.calendar} ${bigCalendar && styles.bigCalendar}`}
         placeholderText="ДД.ММ.ГГГГ"
         value={startDate}
         dateFormat="'MM/dd"

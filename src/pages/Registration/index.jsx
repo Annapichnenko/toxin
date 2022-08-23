@@ -1,7 +1,7 @@
 import React from "react";
 import { Container } from "../../components/Container";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./registration.module.css";
+import styles from "./registration.module.scss";
 import { RegistrationForm } from "../../components/RegistrationForm";
 export const Registration = () => {
   return (

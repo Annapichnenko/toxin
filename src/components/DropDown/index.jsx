@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Button } from "../Button";
-import styles from "./down.module.css";
+import styles from "./down.module.scss";
 export const DropDown = ({
   text1,
   text2,

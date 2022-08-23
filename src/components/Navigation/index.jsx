@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./navigation.module.css";
+import styles from "./navigation.module.scss";
 export const Navigation = () => {
   return (
     <dl className={styles.navigation}>

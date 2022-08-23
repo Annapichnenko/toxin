@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./bullet.module.css";
+import styles from "./bullet.module.scss";
 export const BulletList = ({ data }) => {
   return (
     <div className={styles.bullet}>

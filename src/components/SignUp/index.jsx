@@ -1,7 +1,7 @@
 import React from "react";
 import { Button } from "../Button";
 import { Input } from "../Input";
-import styles from "./sign.module.css";
+import styles from "./sign.module.scss";
 export const SignUp = () => {
   return (
     <form className={styles.sign}>

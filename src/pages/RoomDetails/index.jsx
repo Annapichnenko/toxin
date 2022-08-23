@@ -3,7 +3,7 @@ import { Comfort } from "../../components/Comfort";
 import { Container } from "../../components/Container";
 import { Rating } from "../../components/Rating";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./details.module.css";
+import styles from "./details.module.scss";
 import comfort1 from "./insert_emoticon.svg";
 import comfort2 from "./location_city.svg";
 import comfort3 from "./whatshot.svg";

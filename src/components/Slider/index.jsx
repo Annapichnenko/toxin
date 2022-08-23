@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import ReactSlider from "react-slider";
-import styles from "./slider.module.css";
+import styles from "./slider.module.scss";
 export const Slider = ({ title }) => {
   const [to, setTo] = useState(10000);
   const [from, setFrom] = useState(5000);

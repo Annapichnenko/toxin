@@ -1,4 +1,4 @@
-import styles from "./Pagination.module.css";
+import styles from "./Pagination.module.scss";
 import React, { useEffect, useState } from "react";
 
 const range = (from, to, step = 1, currentPage) => {

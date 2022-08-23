@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .titleX {
   font-style: normal;
   font-weight: 700;
@@ -133,8 +135,8 @@
 }
 .rooms {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: rem(24);
+  line-height: rem(29);
 
   color: #1f2041;
   margin-bottom: 24px;
@@ -143,5 +145,5 @@
   margin-left: 30%;
 
   margin-top: 39.94px;
-  margin-bottom: 73px;
+  margin-bottom: 71px;
 }

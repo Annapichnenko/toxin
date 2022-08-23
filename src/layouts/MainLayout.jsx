@@ -1,6 +1,6 @@
 import { Footer } from "../components/Footer";
 import { Header } from "../components/Header";
-import styles from "./mainLayout.module.css";
+import styles from "./mainLayout.module.scss";
 export const MainLayout = ({
   children,
 

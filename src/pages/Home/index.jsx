@@ -2,7 +2,7 @@ import React from "react";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/Container";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./home.module.css";
+import styles from "./home.module.scss";
 export const Home = () => {
   return (
     <MainLayout>

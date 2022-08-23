@@ -10,9 +10,32 @@ import { DropDown } from "../../components/DropDown";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Slider } from "../../components/Slider";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./rooms.module.css";
-
+import styles from "./rooms.module.scss";
+import room from "./image.jpg";
+import room1 from "./image1.jpg";
+import room2 from "./image2.jpg";
+import room3 from "./image3.jpg";
+import room4 from "./image4.jpg";
+import room5 from "./image5.jpg";
+import room6 from "./image6.jpg";
+import room7 from "./image7.jpg";
+import room8 from "./image8.jpg";
+import room9 from "./image9.jpg";
+import room10 from "./image10.jpg";
+import room11 from "./image11.jpg";
 export const Rooms = () => {
+  const rooms = [room, room1, room2, room3];
+  const rooms1 = [room1, room2, room3, room4];
+  const rooms2 = [room2, room3, room4, room5];
+  const rooms3 = [room3, room7, room8, room9];
+  const rooms4 = [room4, room10, room11, room];
+  const rooms5 = [room5, room7, room8, room9];
+  const rooms6 = [room6, room7, room8, room9];
+  const rooms7 = [room7, room7, room8, room9];
+  const rooms8 = [room8, room7, room8, room9];
+  const rooms9 = [room9, room7, room8, room9];
+  const rooms10 = [room10, room7, room8, room9];
+  const rooms11 = [room11, room7, room8, room9];
   const data1 = [
     {
       id: "list11",
@@ -80,7 +103,7 @@ export const Rooms = () => {
               <div className={styles.column}>
                 <h4 className={styles.titleB}>даты пребывания в отеле</h4>
                 <div className={styles.date}>
-                  <DateCalendar />
+                  <DateCalendar bigCalendar />
                 </div>
                 <h4 className={styles.titleC}>гости</h4>
                 <div className={styles.down}>
@@ -159,18 +182,80 @@ export const Rooms = () => {
                 Номера, которые мы для вас подобрали
               </h4>
               <div className={styles.cardSlider}>
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
-                <CardSlider />
+                <CardSlider
+                  rooms={rooms}
+                  number={888}
+                  price={"9 990₽"}
+                  comments={145}
+                  isLux={true}
+                />
+                <CardSlider
+                  rooms={rooms1}
+                  number={840}
+                  price={"9 900₽"}
+                  comments={65}
+                />
+                <CardSlider
+                  rooms={rooms2}
+                  number={980}
+                  price={"8 500₽"}
+                  comments={35}
+                  isLux={true}
+                />
+                <CardSlider
+                  rooms={rooms3}
+                  number={856}
+                  price={"7 300₽"}
+                  comments={19}
+                />
+                <CardSlider
+                  rooms={rooms4}
+                  number={740}
+                  price={"6 000₽"}
+                  comments={44}
+                />
+                <CardSlider
+                  rooms={rooms5}
+                  number={982}
+                  price={"5 800₽"}
+                  comments={56}
+                />
+                <CardSlider
+                  rooms={rooms6}
+                  number={678}
+                  price={"5 500₽"}
+                  comments={45}
+                />
+                <CardSlider
+                  rooms={rooms7}
+                  number={450}
+                  price={"5 300₽"}
+                  comments={39}
+                />
+                <CardSlider
+                  rooms={rooms8}
+                  number={350}
+                  price={"5 000₽"}
+                  comments={77}
+                />
+                <CardSlider
+                  rooms={rooms9}
+                  number={666}
+                  price={"5 000₽"}
+                  comments={25}
+                />
+                <CardSlider
+                  rooms={rooms10}
+                  number={444}
+                  price={"5 000₽"}
+                  comments={15}
+                />
+                <CardSlider
+                  rooms={rooms11}
+                  number={352}
+                  price={"5 000₽"}
+                  comments={55}
+                />
               </div>
               <div className={styles.pagination}>
                 <Pagination

@@ -10,7 +10,7 @@ import { LikeButton } from "../../components/LikeButton";
 import { RadioButtons } from "../../components/RadioButtons";
 import { RateButton } from "../../components/RateButton";
 import { Toggle } from "../../components/Toggle";
-import "./styles.css";
+import "./styles.scss";
 import patrisia from "../../components/Comment/image 4.png";
 import murad from "../../components/Comment/image.png";
 import { Navigation } from "../../components/Navigation";

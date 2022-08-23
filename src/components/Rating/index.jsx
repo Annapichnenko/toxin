@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./rating.module.css";
+import styles from "./rating.module.scss";
 import { Graph } from "../Graph";
 
 export const Rating = () => {

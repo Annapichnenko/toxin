@@ -3,7 +3,7 @@ import image from "./slide1.svg";
 import image1 from "./slide2.svg";
 import empty from "./slider 1.svg";
 import filled from "./white.svg";
-import styles from "./styles.css";
+import styles from "./styles.scss";
 const PAGE_WIDTH = 270;
 export const Carosel = ({ children }) => {
   const [pages, setPages] = useState([]);

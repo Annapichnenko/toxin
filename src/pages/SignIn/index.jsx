@@ -2,7 +2,7 @@ import React from "react";
 import { Container } from "../../components/Container";
 import { SignUp } from "../../components/SignUp";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./sign.module.css";
+import styles from "./sign.module.scss";
 
 export const SignIn = () => {
   return (

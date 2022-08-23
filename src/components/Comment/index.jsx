@@ -1,7 +1,7 @@
 import { getByTitle } from "@testing-library/react";
 import React from "react";
 import { LikeButton } from "../LikeButton";
-import styles from "./comment.module.css";
+import styles from "./comment.module.scss";
 
 export const Comment = ({ title, subtitle, text, image, number }) => {
   return (
