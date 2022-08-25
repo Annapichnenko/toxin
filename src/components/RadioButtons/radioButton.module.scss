@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .radioButton:checked,
 .radioButton:not(:checked) {
   position: absolute;
@@ -8,7 +10,7 @@
   position: relative;
   padding-left: 30px;
   cursor: pointer;
-  line-height: 20px;
+  line-height: rem(20);
   display: inline-block;
   color: #666;
 }
@@ -68,8 +70,8 @@
 }
 .radioLabel {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14);
+  line-height: rem(24);
 
   color: rgba(31, 32, 65, 0.75);
 }

@@ -1,8 +1,10 @@
+@import "../../styles/function.scss";
+
 .summary {
-  font-size: 12px;
+  font-size: rem(12);
   color: #1f2041;
   font-weight: 700;
-  line-height: 15px;
+  line-height: rem(15);
   position: relative;
   width: 210px;
   text-transform: uppercase;

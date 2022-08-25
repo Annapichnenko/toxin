@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .down {
   width: 266px;
   height: 119px;
@@ -18,8 +20,8 @@
   margin: 0;
   white-space: nowrap;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
 
   text-transform: uppercase;
 }
@@ -34,8 +36,8 @@
 }
 .number {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   border: none;
   outline: none;
   width: 20px;
@@ -65,8 +67,8 @@
   height: 44px;
   left: 140px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14);
+  line-height: rem(24);
   color: rgba(31, 32, 65, 0.75);
   padding-left: 15px;
   border: 1px solid rgba(31, 32, 65, 0.5);

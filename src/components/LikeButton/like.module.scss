@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .like {
   color: rgba(31, 32, 65, 0.25);
   border: 1px solid rgba(31, 32, 65, 0.25);
@@ -12,7 +14,7 @@
   display: block;
   margin-top: 5px;
   size: 10px;
-  line-height: 9px;
+  line-height: rem(9);
   margin-left: 5px;
 }
 .isClick {
@@ -20,7 +22,7 @@
 }
 .number {
   margin-left: 5px;
-  font-size: 10px;
+  font-size: rem(10);
   width: 9.93px;
   height: 13px;
   margin-top: 3px;

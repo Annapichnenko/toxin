@@ -1,3 +1,5 @@
+@import "../../styles/function.scss";
+
 .goodStart {
   stop-color: rgba(188, 156, 255, 1);
 }
@@ -44,15 +46,15 @@
 }
 .count {
   font-weight: 700;
-  font-size: 24px;
-  line-height: 28px;
+  font-size: rem(24);
+  line-height: rem(28);
   margin-left: 10px;
   color: #bc9cff;
 }
 .text {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
 
   text-transform: uppercase;
 

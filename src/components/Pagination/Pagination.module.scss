@@ -1,3 +1,4 @@
+@import "../../styles/function.scss";
 .pagination {
   display: flex;
   justify-content: left;
@@ -32,7 +33,7 @@
   height: 40px;
   width: 41px;
   margin-left: -16px;
-  font-size: 12px;
+  font-size: rem(12);
 }
 .button {
   border: none;
@@ -63,8 +64,8 @@
 }
 .title {
   font-weight: 400;
-  font-size: 14px;
-  line-height: 24px;
+  font-size: rem(14);
+  line-height: rem(24);
   margin-left: 15px;
   color: rgba(31, 32, 65, 0.75);
 }

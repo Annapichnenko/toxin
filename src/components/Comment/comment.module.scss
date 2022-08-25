@@ -1,9 +1,11 @@
+@import "../../styles/function.scss";
+
 .h4 {
   color: rgba(31, 32, 65, 0.75);
   padding: 0;
   margin: 0;
   margin-left: 8px;
-  font-size: 14px;
+  font-size: rem(14);
 }
 .p {
   padding: 0;
@@ -11,21 +13,21 @@
   color: rgba(31, 32, 65, 0.75);
   margin-left: 8px;
   margin-top: 6px;
-  font-size: 14px;
+  font-size: rem(14);
 }
 .title {
   color: rgba(31, 32, 65, 0.75);
   width: 655px;
-  line-height: 24px;
+  line-height: rem(24);
 
-  font-size: 14px;
+  font-size: rem(14);
   margin-top: -1px;
   margin-left: 15px;
 }
 .like {
   display: flex;
   margin-top: 8px;
-  font-size: 14px;
+  font-size: rem(14);
 }
 .image {
   padding: 0;

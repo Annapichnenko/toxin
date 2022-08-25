@@ -1,7 +1,9 @@
+@import "../../styles/function.scss";
+
 .button {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   text-transform: uppercase;
   color: #ffffff;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
@@ -15,8 +17,8 @@
 }
 .withFrame {
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   text-transform: uppercase;
   color: #bc9cff;
   border-radius: 22px;
@@ -31,8 +33,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   text-transform: uppercase;
   color: #bc9cff;
   background: transparent;
@@ -42,8 +44,8 @@
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 700;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   text-transform: uppercase;
   color: rgba(31, 32, 65, 0.5);
   background: transparent;
@@ -55,9 +57,9 @@
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
   font-weight: 700;
-  font-size: 12px;
+  font-size: rem(12);
 
-  line-height: 16px;
+  line-height: rem(16);
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
@@ -73,8 +75,8 @@
   top: 13px;
 }
 .loginButton {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   font-weight: 400px;
   text-transform: uppercase;
   color: #bc9cff;
@@ -95,8 +97,8 @@
   height: 34px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
-  font-size: 12px;
-  line-height: 15px;
+  font-size: rem(12);
+  line-height: rem(15);
   padding: 9px 10px 10px 10px;
   text-transform: uppercase;
   color: #ffffff;
