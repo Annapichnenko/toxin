@@ -1,4 +1,5 @@
 import { Footer } from "../components/Footer";
+import { FooterMobile } from "../components/FooterMobile";
 import { Header } from "../components/Header";
 import styles from "./mainLayout.module.scss";
 export const MainLayout = ({
@@ -13,6 +14,7 @@ export const MainLayout = ({
         <main>{children}</main>
       </div>
       <Footer withFooterBorder={withFooterBorder} />
+      <FooterMobile />
     </div>
   </>
 );

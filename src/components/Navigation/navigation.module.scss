@@ -6,6 +6,10 @@
   font-size: 14px;
   justify-content: space-between;
   margin-left: 87px;
+
+  @media screen and (max-width: 1270px) {
+    margin-left: 20px;
+  }
 }
 .dt {
   font-size: rem(14);

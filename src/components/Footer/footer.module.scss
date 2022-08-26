@@ -30,6 +30,10 @@
   font-size: rem(12);
 
   margin-left: 57px;
+
+  @media screen and (max-width: 1070px) {
+    margin-left: 0;
+  }
 }
 .title {
   font-weight: 700;
@@ -42,7 +46,11 @@
   display: flex;
   align-items: center;
   padding-top: 100px;
-  padding-left: 140px;
+  padding-left: 9.7%;
+
+  @media screen and (max-width: 1200px) {
+    padding-left: 3%;
+  }
 }
 .title2 {
   width: 260px;
@@ -58,6 +66,10 @@
   background: #ffffff;
 
   flex: 0 0 auto;
+
+  @media screen and (max-width: 970px) {
+    display: none;
+  }
 }
 .border {
   border-top: 1px solid rgba(31, 32, 65, 0.25);
@@ -144,6 +156,10 @@
 }
 .text3 {
   margin-left: 93px;
+
+  @media screen and (max-width: 1070px) {
+    margin-left: 20px;
+  }
 }
 .texts {
   display: flex;
@@ -152,6 +168,10 @@
 }
 .title1 {
   margin-left: 30px;
+
+  @media screen and (max-width: 1070px) {
+    margin-left: 0;
+  }
 }
 .text4 {
   margin-left: 22px;

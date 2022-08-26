@@ -52,7 +52,7 @@
 }
 .bigButton {
   box-sizing: border-box;
-  width: 318px;
+  width: 100%;
   height: 43px;
   background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
   border-radius: 22px;
@@ -63,16 +63,24 @@
   text-transform: uppercase;
   color: #ffffff;
   font-weight: 700;
+
+  @media screen and (max-width: 390px) {
+    width: 85%;
+  }
 }
 .wrapper {
   max-width: 320px;
   position: relative;
-  display: inline-block;
 }
 .icon {
   position: absolute;
   right: 13px;
   top: 13px;
+
+  @media screen and (max-width: 390px) {
+    right: 0;
+    left: 230px;
+  }
 }
 .loginButton {
   font-size: rem(12);
