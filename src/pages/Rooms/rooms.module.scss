@@ -118,10 +118,14 @@
   margin-top: 33px;
 }
 .rommSlider {
-  margin-left: 140px;
+  margin-left: 9.7%;
 }
 .container {
   display: flex;
+  @media screen and (max-width: 630px) {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 .cardSlider {
   display: flex;
@@ -130,8 +134,8 @@
   row-gap: 21px;
 }
 .sliders {
-  margin-left: 60px;
-  margin-top: 30px;
+  margin-left: 4.1%;
+  margin-top: 2%;
 }
 .rooms {
   font-weight: 700;
@@ -140,10 +144,23 @@
 
   color: #1f2041;
   margin-bottom: 24px;
+  @media screen and (max-width: 630px) {
+    margin-top: 7%;
+  }
 }
 .pagination {
   margin-left: 30%;
 
   margin-top: 39.94px;
   margin-bottom: 71px;
+  @media screen and (max-width: 933px) {
+    margin-left: 2%;
+  }
+  @media screen and (max-width: 630px) {
+    margin-left: 28%;
+  }
+  @media screen and (max-width: 577px) {
+    margin-left: 4%;
+    margin-bottom: 20px;
+  }
 }

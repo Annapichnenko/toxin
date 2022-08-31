@@ -8,8 +8,14 @@
   background-repeat: no-repeat;
 }
 .container {
-  padding-top: 70px;
-  padding-left: 139px;
+  padding-top: 4.8%;
+  padding-left: 9.7%;
+  @media screen and (max-width: 888px) {
+    padding-left: 4%;
+  }
+  @media screen and (max-width: 330px) {
+    padding-left: 0.2%;
+  }
 }
 .span {
   margin-top: 318px;
