@@ -19,9 +19,7 @@
 }
 .imageses {
 }
-.content {
-  padding-top: 70px;
-}
+
 .title {
   font-weight: 700;
   font-size: rem(19);
@@ -29,6 +27,9 @@
   margin-top: 0px;
   color: #1f2041;
   margin-bottom: 10px;
+  @media screen and (max-width: 750px) {
+    padding-top: 15px;
+  }
 }
 .comfort {
 }
@@ -39,13 +40,28 @@
 
   color: #1f2041;
   margin-left: 11px;
+  @media screen and (max-width: 750px) {
+    padding-top: 15px;
+  }
 }
 .content {
   display: flex;
+  padding-top: 70px;
+  @media screen and (max-width: 750px) {
+    display: unset;
+  }
 }
 .graph {
   margin-left: 81px;
   margin-right: 108px;
+
+  @media screen and (max-width: 820px) {
+    margin-left: 50px;
+  }
+
+  @media screen and (max-width: 785px) {
+    margin-left: 20px;
+  }
 }
 .text {
   font-weight: 700;
@@ -98,20 +114,45 @@
   color: rgba(31, 32, 65, 0.75);
   margin-left: -2px;
   margin-top: -1px;
+  @media screen and (max-width: 330px) {
+    width: 250px;
+  }
 }
 .ul {
   display: flex;
   flex-direction: row;
   margin-bottom: -8px;
+  @media screen and (max-width: 790px) {
+    display: unset;
+  }
 }
 .ul2 {
   margin-left: 110.5px;
+  @media screen and (max-width: 826px) {
+    margin-left: 80px;
+    @media screen and (max-width: 774px) {
+      margin-left: 20px;
+    }
+  }
 }
 
 .content1 {
   display: flex;
   margin-bottom: 70px;
   margin-left: 141px;
+  @media screen and (max-width: 1290px) {
+    flex-wrap: wrap;
+    @media screen and (max-width: 570px) {
+      flex-wrap: wrap;
+      @media screen and (max-width: 620px) {
+        margin-left: 50px;
+      }
+
+      @media screen and (max-width: 330px) {
+        margin-left: 5px;
+      }
+    }
+  }
 }
 .booking1 {
   width: 750px;
@@ -120,6 +161,12 @@
 .bookes {
   margin-top: 70px;
   margin-right: 50px;
+  @media screen and (max-width: 1042px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    @media screen and (max-width: 442px) {
+    }
+  }
 }
 .comfort1 {
   margin-top: 27px;
@@ -142,7 +189,4 @@
 }
 .title2 {
   margin-top: 6px;
-}
-.comfort4 {
-  margin-top: 20px;
 }

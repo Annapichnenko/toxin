@@ -23,6 +23,19 @@
   font-size: rem(14);
   margin-top: -1px;
   margin-left: 15px;
+
+  @media screen and (max-width: 870px) {
+    width: 500px;
+  }
+  @media screen and (max-width: 690px) {
+    width: 400px;
+  }
+  @media screen and (max-width: 590px) {
+    width: 300px;
+    @media screen and (max-width: 330px) {
+      width: 200px;
+    }
+  }
 }
 .like {
   display: flex;
