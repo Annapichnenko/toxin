@@ -11,6 +11,9 @@
   padding-left: 30px;
   padding-top: 40px;
   padding-right: 30px;
+  @media screen and (max-width: 330px) {
+    padding-left: 7px;
+  }
 }
 .title {
   font-weight: 700;
@@ -46,12 +49,19 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  @media screen and (max-width: 340px) {
+    justify-content: unset;
+    column-gap: 57px;
+  }
 }
 .part2 {
   display: flex;
   flex-direction: row;
   column-gap: 20px;
   padding-top: 40px;
+  @media screen and (max-width: 340px) {
+    column-gap: 7px;
+  }
 }
 .down {
   padding-top: 20px;
@@ -93,6 +103,10 @@
   color: rgba(31, 32, 65, 0.75);
   margin-left: 42px;
   margin-top: 2px;
+
+  @media screen and (max-width: 340px) {
+    margin-left: 20px;
+  }
 }
 .middle {
   font-weight: 400;
@@ -111,6 +125,7 @@
   display: flex;
   padding-bottom: 10px;
 }
+
 .icon2 {
   display: flex;
 }
@@ -120,6 +135,10 @@
   color: rgba(31, 32, 65, 0.75);
   display: flex;
   justify-content: space-between;
+  @media screen and (max-width: 340px) {
+    justify-content: unset;
+    column-gap: 57px;
+  }
 }
 .icon3 {
   display: flex;
@@ -128,6 +147,9 @@
   width: 21px;
 
   margin-left: 33px;
+  @media screen and (max-width: 330px) {
+    margin-left: 10px;
+  }
 }
 .parts {
   font-weight: 700;
@@ -144,6 +166,9 @@
   border-bottom: 1px dashed rgba(31, 32, 65, 0.25);
   width: 181px;
   margin-bottom: 4px;
+  @media screen and (max-width: 440px) {
+  }
+  width: 120px;
 }
 .book2 {
   display: flex;
@@ -216,6 +241,9 @@
 }
 .app {
   margin-left: 59px;
+  @media screen and (max-width: 340px) {
+    margin-left: 20px;
+  }
 }
 .bookek {
   display: flex;
