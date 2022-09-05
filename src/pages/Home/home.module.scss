@@ -19,7 +19,21 @@
 }
 .span {
   margin-top: 318px;
-  margin-left: 870px;
+  margin-left: 67%;
+
+  @media screen and (max-width: 1020px) {
+    margin-left: 47%;
+  }
+  @media screen and (max-width: 600px) {
+    margin-left: 27%;
+  }
+  @media screen and (max-width: 430px) {
+    margin-left: 17%;
+  }
+  @media screen and (max-width: 380px) {
+    margin-left: 5%;
+  }
+
   text-align: right;
   width: 297px;
 

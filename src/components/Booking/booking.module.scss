@@ -11,7 +11,7 @@
   padding-left: 30px;
   padding-top: 40px;
   padding-right: 30px;
-  @media screen and (max-width: 330px) {
+  @media screen and (max-width: 345px) {
     padding-left: 7px;
   }
 }
@@ -49,9 +49,13 @@
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 368px) {
     justify-content: unset;
-    column-gap: 57px;
+    column-gap: 100px;
+  }
+  @media screen and (max-width: 346px) {
+    justify-content: unset;
+    column-gap: 50px;
   }
 }
 .part2 {
@@ -59,7 +63,7 @@
   flex-direction: row;
   column-gap: 20px;
   padding-top: 40px;
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 368px) {
     column-gap: 7px;
   }
 }
@@ -104,7 +108,7 @@
   margin-left: 42px;
   margin-top: 2px;
 
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 368px) {
     margin-left: 20px;
   }
 }
@@ -135,7 +139,7 @@
   color: rgba(31, 32, 65, 0.75);
   display: flex;
   justify-content: space-between;
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 368px) {
     justify-content: unset;
     column-gap: 57px;
   }
@@ -167,8 +171,8 @@
   width: 181px;
   margin-bottom: 4px;
   @media screen and (max-width: 440px) {
+    width: 120px;
   }
-  width: 120px;
 }
 .book2 {
   display: flex;
@@ -191,6 +195,10 @@
 .drop {
   position: absolute;
   top: 42px;
+  width: 320px;
+  @media screen and (max-width: 368px) {
+    width: 303px;
+  }
 }
 .booking1 {
   padding-top: 61px;
@@ -222,8 +230,6 @@
   margin-left: 1px;
   margin-top: 2px;
 }
-.parted {
-}
 .part8 {
   font-weight: 400;
   font-size: rem(14);
@@ -241,7 +247,7 @@
 }
 .app {
   margin-left: 59px;
-  @media screen and (max-width: 340px) {
+  @media screen and (max-width: 368px) {
     margin-left: 20px;
   }
 }
