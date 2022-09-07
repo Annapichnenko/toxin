@@ -109,7 +109,7 @@ export const Pagination = ({
         </ul>
       </nav>
       <span className={styles.title}>
-        1 – {currentPage * pageLimit} из {totalRecords}+ вариантов аренды
+        1 – {4 * pageLimit} из {100}+ вариантов аренды
       </span>
     </>
   );

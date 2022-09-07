@@ -17,6 +17,13 @@
   @media screen and (max-width: 962px) {
     padding-left: 2%;
   }
+  @media screen and (max-width: 914px) {
+    justify-content: space-between;
+    padding-right: 4%;
+  }
+  @media screen and (max-width: 450px) {
+    padding-right: 6%;
+  }
 }
 .logo {
 }

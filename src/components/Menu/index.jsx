@@ -12,10 +12,7 @@ export const Menu = ({ header, items, active, setActive }) => {
     navigate("/signin");
   };
   return (
-    <div
-      className={active ? "menu active" : "menu"}
-      onClick={() => setActive(false)}
-    >
+    <div className={active ? "menu active" : "menu"}>
       <div className="menu__content">
         <div className="menu__header">
           {header}

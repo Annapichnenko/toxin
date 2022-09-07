@@ -151,16 +151,15 @@
 .pagination {
   margin-left: 30%;
 
-  margin-top: 39.94px;
   margin-bottom: 71px;
-  @media screen and (max-width: 933px) {
-    margin-left: 2%;
+  @media screen and (max-width: 950px) {
+    margin-left: 3%;
   }
   @media screen and (max-width: 630px) {
-    margin-left: 28%;
+    margin-left: 30%;
   }
   @media screen and (max-width: 577px) {
-    margin-left: 4%;
+    margin-left: 2%;
     margin-bottom: 20px;
   }
 }

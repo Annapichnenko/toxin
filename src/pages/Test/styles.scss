@@ -269,6 +269,9 @@ body {
   margin-left: 20px;
   position: relative;
   cursor: pointer;
+  @media screen and (min-width: 914px) {
+    display: none;
+  }
 }
 .burger-btn:before {
   content: "";
@@ -337,11 +340,12 @@ ul li a {
   color: black;
   text-decoration: none;
   font-size: 1.3rem;
+  cursor: pointer;
 }
 ul {
   text-align: center;
   display: flex;
-  flex-direction: column;
+
   align-items: center;
   padding-top: 20px;
 }
