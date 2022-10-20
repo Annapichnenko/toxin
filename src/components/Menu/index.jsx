@@ -19,9 +19,9 @@ export const Menu = ({ header, items, active, setActive }) => {
           <img onClick={() => setActive(!active)} width="40px" src={image} />
         </div>
 
-        <ul>
+        <ul className={styles.ul}>
           {items.map((item) => (
-            <li>
+            <li className={styles.li}>
               <a href={item.href}>{item.value}</a>
             </li>
           ))}
