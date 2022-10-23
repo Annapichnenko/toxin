@@ -1,0 +1,25 @@
+.button {
+  margin-top: 15px;
+}
+.buttons {
+  z-index: 20;
+  position: relative;
+  margin-left: 18px;
+}
+.bigButton {
+  margin-left: 50px;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 7px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(53, 56, 56);
+}
+.li {
+  list-style-type: none;
+}

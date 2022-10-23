@@ -1,6 +1,6 @@
 import React from "react";
 import { IconSvg } from "../IconSvg";
-import styles from "./button.module.css";
+import styles from "./button.module.scss";
 
 export const Button = ({
   text,

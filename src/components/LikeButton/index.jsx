@@ -1,6 +1,6 @@
 import React from "react";
 import { useState } from "react";
-import styles from "./like.module.css";
+import styles from "./like.module.scss";
 
 export const LikeButton = ({ number }) => {
   const [isClick, setIsClick] = useState(false);

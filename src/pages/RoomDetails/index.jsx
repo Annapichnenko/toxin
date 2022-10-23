@@ -3,7 +3,7 @@ import { Comfort } from "../../components/Comfort";
 import { Container } from "../../components/Container";
 import { Rating } from "../../components/Rating";
 import { MainLayout } from "../../layouts/MainLayout";
-import styles from "./details.module.css";
+import styles from "./details.module.scss";
 import comfort1 from "./insert_emoticon.svg";
 import comfort2 from "./location_city.svg";
 import comfort3 from "./whatshot.svg";
@@ -12,6 +12,10 @@ import patrisia from "../../components/Comment/image 4.png";
 import murad from "../../components/Comment/image.png";
 import { Comment } from "../../components/Comment";
 import { BulletList } from "../../components/BulletList";
+import img1 from "./images.jpg";
+import img2 from "./image1.jpg";
+import img3 from "./image3.jpg";
+
 export const RoomDetails = () => {
   const dataBullet = [
     {
@@ -30,16 +34,13 @@ export const RoomDetails = () => {
   return (
     <MainLayout withFooterBorder>
       <div className={styles.wrapper}>
+        <div className={styles.images}>
+          <img src={img2} className={styles.photo} />
+          <img src={img1} className={styles.photo} />
+          <img src={img3} className={styles.photo} />
+        </div>
         <Container>
           <div className={styles.container}>
-            <div className={styles.images}>
-              <div className={styles.image1}></div>
-              <div className={styles.imageses}>
-                <div className={styles.image2}></div>
-                <div className={styles.image3}></div>
-              </div>
-            </div>
-
             <div className={styles.content1}>
               <div className={styles.booking1}>
                 <div className={styles.content}>

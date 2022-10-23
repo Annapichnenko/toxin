@@ -4,7 +4,7 @@ import { Button } from "../Button";
 import { DateCalendar } from "../DateCalendar";
 import { DropDown } from "../DropDown";
 import { Input } from "../Input";
-import styles from "./card.module.css";
+import styles from "./card.module.scss";
 export const Card = () => {
   const navigate = useNavigate();
   const handleClick = () => {

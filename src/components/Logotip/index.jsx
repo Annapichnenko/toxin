@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./logotip.module.css";
+import styles from "./logotip.module.scss";
 import logo from "./logo.svg";
 import toxin from "./toxin.svg";
 import { useNavigate } from "react-router-dom";

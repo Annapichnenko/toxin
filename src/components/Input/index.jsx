@@ -1,6 +1,6 @@
 import React from "react";
 import { IconSvg } from "../IconSvg";
-import styles from "./input.module.css";
+import styles from "./input.module.scss";
 export const Input = ({
   isIcons,
   color,

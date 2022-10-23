@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./list.module.css";
+import styles from "./list.module.scss";
 import { Checkbox } from "../Checkbox";
 export const CheckboxList = ({ title, data }) => {
   return (

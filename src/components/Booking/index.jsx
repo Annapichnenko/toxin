@@ -3,7 +3,7 @@ import { DateCalendar } from "../DateCalendar";
 import { DropDown } from "../DropDown";
 import icon from "./icon.svg";
 
-import styles from "./booking.module.css";
+import styles from "./booking.module.scss";
 import { Button } from "../Button";
 export const Booking = () => {
   return (

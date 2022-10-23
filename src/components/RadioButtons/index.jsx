@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./radioButton.module.css";
+import styles from "./radioButton.module.scss";
 export const RadioButtons = ({ text, id, checked, name }) => {
   return (
     <div>

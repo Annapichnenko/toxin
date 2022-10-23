@@ -1,0 +1,36 @@
+@import "../../styles/function.scss";
+
+.summary {
+  font-size: rem(12);
+  color: #1f2041;
+  font-weight: 700;
+  line-height: rem(15);
+  position: relative;
+  width: 210px;
+  text-transform: uppercase;
+  margin-top: 33px;
+}
+.summary::marker {
+  content: "";
+}
+.checkboxes {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.summary:before {
+  content: "";
+  background-image: url("./expand_more.png");
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 238px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  top: 1px;
+}
+.details[open] .summary:before {
+  transform: rotate(0deg);
+}

@@ -10,7 +10,7 @@ import { LikeButton } from "../../components/LikeButton";
 import { RadioButtons } from "../../components/RadioButtons";
 import { RateButton } from "../../components/RateButton";
 import { Toggle } from "../../components/Toggle";
-import "./styles.css";
+import "./styles.scss";
 import patrisia from "../../components/Comment/image 4.png";
 import murad from "../../components/Comment/image.png";
 import { Navigation } from "../../components/Navigation";
@@ -33,6 +33,7 @@ import { CardSlider } from "../../components/CardSlider";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Graph } from "../../components/Graph";
 import { Rating } from "../../components/Rating";
+import { Menu } from "../../components/Menu";
 export const Test = () => {
   const data = [
     {
@@ -158,8 +159,35 @@ export const Test = () => {
       totalPages: totalPages,
     });
   };
+  const [menuActive, setMenuActive] = useState(false);
+  const items = [
+    { value: "Главная" },
+    { value: "Настройки" },
+    { value: "Регистрация" },
+    { value: "О нас" },
+  ];
   return (
     <div>
+      <nav className="nav-wrapper">
+        <div className="burger-btn" onClick={() => setMenuActive(!menuActive)}>
+          <span />
+        </div>
+      </nav>
+      <main>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+        <p>ghvkhvljb;kojnbvgcfcfcfcfcfxdzdvbvbnbnbnnbm.bkjb</p>
+      </main>
+      <Menu
+        active={menuActive}
+        setActive={setMenuActive}
+        header={"Бургер меню"}
+        items={items}
+      />
+
       <div className="button1">
         <div className="button2">
           <Button text="click me" />

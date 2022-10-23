@@ -1,0 +1,45 @@
+@import "../../styles/function.scss";
+
+.bullet {
+  margin-left: 11px;
+  @media screen and (min-width: 768px) {
+    margin-left: 5px;
+  }
+  @media screen and (min-width: 630px) {
+    padding-right: 4%;
+  }
+}
+.ul {
+  color: rgba(31, 32, 65, 0.25);
+  display: flex;
+  flex-direction: column;
+  margin-left: -1px;
+  @media screen and (min-width: 766px) {
+    padding-right: 2%;
+  }
+}
+
+.li {
+  width: 242px;
+  margin-bottom: 10px;
+  font-weight: 400;
+
+  line-height: rem(24);
+  font-size: rem(14);
+  text-decoration: none;
+  list-style: none;
+  position: relative;
+  color: rgba(31, 32, 65, 0.75);
+
+  padding-left: 15px;
+}
+.li:before {
+  content: "";
+  background-image: url("./Ellipse.svg");
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  background-repeat: no-repeat;
+  left: -10px;
+  top: 5px;
+}

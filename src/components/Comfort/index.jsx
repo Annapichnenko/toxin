@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./comfort.module.css";
+import styles from "./comfort.module.scss";
 import images from "./emoticon.svg";
 export const Comfort = ({ title, text, image }) => {
   return (

@@ -1,4 +1,4 @@
-import styles from "./Pagination.module.css";
+import styles from "./Pagination.module.scss";
 import React, { useEffect, useState } from "react";
 
 const range = (from, to, step = 1, currentPage) => {
@@ -109,7 +109,7 @@ export const Pagination = ({
         </ul>
       </nav>
       <span className={styles.title}>
-        1 – {currentPage * pageLimit} из {totalRecords}+ вариантов аренды
+        1 – {4 * pageLimit} из {100}+ вариантов аренды
       </span>
     </>
   );

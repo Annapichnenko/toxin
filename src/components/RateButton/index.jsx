@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./rate.module.css";
+import styles from "./rate.module.scss";
 
 export const RateButton = () => {
   function getRandomInt(max) {

@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./graph.module.css";
+import styles from "./graph.module.scss";
 import { Cell, Pie, PieChart } from "recharts";
 
 export const Graph = () => {

@@ -1,6 +1,6 @@
 import React from "react";
 
-import styles from "./toggle.module.css";
+import styles from "./toggle.module.scss";
 export const Toggle = ({ id, text }) => {
   return (
     <label className={styles.toggleButtonCover}>

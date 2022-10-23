@@ -1,0 +1,115 @@
+@import "../../styles/function.scss";
+
+.button {
+  font-weight: 700;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #ffffff;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  border: none;
+  cursor: pointer;
+  padding: 15px 22px 20px;
+}
+.buttonDisabled {
+  opacity: 0.5;
+}
+.withFrame {
+  font-weight: 700;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #bc9cff;
+  border-radius: 22px;
+  background: white;
+  border: 2px solid #bc9cff;
+  height: 44px;
+  box-sizing: border-box;
+  width: 99px;
+  padding: 12px 20px 15px 15px;
+}
+.withoutFrame {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: #bc9cff;
+  background: transparent;
+  padding: 0;
+}
+.blackButton {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: rem(12);
+  line-height: rem(15);
+  text-transform: uppercase;
+  color: rgba(31, 32, 65, 0.5);
+  background: transparent;
+}
+.bigButton {
+  box-sizing: border-box;
+  width: 100%;
+  height: 45px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  font-weight: 700;
+  font-size: rem(12);
+
+  line-height: rem(16);
+  text-transform: uppercase;
+  color: #ffffff;
+  font-weight: 700;
+
+  @media screen and (max-width: 390px) {
+    width: 85%;
+  }
+}
+.wrapper {
+  max-width: 320px;
+  position: relative;
+}
+.icon {
+  position: absolute;
+  right: 13px;
+  top: 13px;
+
+  @media screen and (max-width: 390px) {
+    right: 0;
+    left: 230px;
+  }
+}
+.loginButton {
+  font-size: rem(12);
+  line-height: rem(15);
+  font-weight: 400px;
+  text-transform: uppercase;
+  color: #bc9cff;
+  border-radius: 22px;
+  background: white;
+  border: 2px solid #bc9cff;
+  height: 34px;
+  box-sizing: border-box;
+  width: 87px;
+  padding: 9px 10px 10px 10px;
+  font-family: "Montserrat";
+  font-style: normal;
+}
+
+.loginBigButton {
+  box-sizing: border-box;
+  width: 196px;
+  height: 34px;
+  background: linear-gradient(180deg, #bc9cff 0%, #8ba4f9 100%);
+  border-radius: 22px;
+  font-size: rem(12);
+  line-height: rem(15);
+  padding: 9px 10px 10px 10px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-family: "Montserrat";
+  margin-top: 2px;
+}
