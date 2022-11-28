@@ -1,0 +1,26 @@
+.wrapper {
+  background-image: url("./imageses.jpg");
+  -moz-background-size: 100%;
+  -webkit-background-size: 100%;
+  -o-background-size: 100%;
+  background-size: 100%;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  height: 684px;
+  background-size: cover;
+}
+.container {
+  display: flex;
+
+  padding-top: 19px;
+  padding-left: 37%;
+  height: 684px;
+  overflow: hidden;
+  @media screen and (max-width: 700px) {
+    padding-left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

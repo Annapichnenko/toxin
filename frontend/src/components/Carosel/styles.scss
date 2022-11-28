@@ -1,0 +1,48 @@
+.main-container {
+  height: 150px;
+  width: 270px;
+
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+.window {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+.all-pages-container {
+  height: 100%;
+  display: flex;
+
+  transition: translate;
+  transition-property: transform;
+  transition-duration: 300ms;
+  transition-timing-function: ease-in-out;
+}
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+}
+.left {
+  left: 18.5px;
+}
+.right {
+  right: 18px;
+}
+.bullets {
+  padding: 0;
+  margin: 0;
+  cursor: pointer;
+}
+.bullet-wrapper {
+  position: absolute;
+  bottom: 7px;
+  left: 77%;
+  z-index: 3;
+}

@@ -1,0 +1,71 @@
+.button {
+  margin-top: 15px;
+}
+.buttons {
+  z-index: 20;
+  position: relative;
+  margin-left: 18px;
+}
+.bigButton {
+  margin-left: 50px;
+}
+.ul {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  row-gap: 7px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  color: rgb(53, 56, 56);
+}
+.li {
+  list-style-type: none;
+}
+.login {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+  align-items: center;
+}
+.person {
+  color: rgb(4, 163, 44);
+}
+.menu {
+  position: absolute;
+  height: 100vh;
+  width: 500px;
+  top: 0;
+  right: 0;
+  display: none;
+  transform: all 0.2s;
+  z-index: 15;
+  @media screen and (max-width: 768px) {
+    width: 100%;
+  }
+}
+.menu.active {
+  display: block;
+}
+
+.menuContent {
+  width: 100%;
+  height: 100%;
+  background-color: rgb(244, 229, 247);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transform: all 0.4s;
+}
+.menuHeader {
+  padding: 15px;
+  padding-left: 50px;
+  font-size: 2rem;
+  color: black;
+  border-bottom: 1px solid black;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
