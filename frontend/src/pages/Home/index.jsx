@@ -1,13 +1,14 @@
 import React, { useEffect, useState } from "react";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/Container";
+import { PORT } from "../../const";
 import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./home.module.scss";
 export const Home = () => {
   const [title, setTitle] = useState("загрузка...");
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/datas")
+    fetch(`${PORT}/api/datas`)
       .then(function (response) {
         return response.json();
       })

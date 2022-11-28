@@ -7,13 +7,14 @@ import { Toggle } from "../Toggle";
 import styles from "./form.module.scss";
 import eye from "../../images/eye.png";
 import eye1 from "../../images/eye1.png";
+import { PORT } from "../../const";
 export const RegistrationForm = () => {
   const [passwordType, setPasswordType] = useState("password");
 
   const [users, setUsers] = useState([]);
   const [create, setCreate] = useState(false);
   useEffect(() => {
-    fetch("http://localhost:5000/api/users")
+    fetch(`${PORT}/api/users`)
       .then(function (response) {
         return response.json();
       })
@@ -69,7 +70,7 @@ export const RegistrationForm = () => {
     } else if (users.find((user) => user.email === email)) {
       alert("user с таким email уже существует");
     } else {
-      fetch("http://localhost:5000/api/registration", {
+      fetch(`${PORT}/api/registration`, {
         method: "post",
         body: JSON.stringify({ email, password, name, surname }),
         headers: {

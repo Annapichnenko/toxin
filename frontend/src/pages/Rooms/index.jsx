@@ -8,6 +8,7 @@ import { DateCalendar } from "../../components/DateCalendar";
 import { DropDown } from "../../components/DropDown";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Slider } from "../../components/Slider";
+import { PORT } from "../../const";
 import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./rooms.module.scss";
 
@@ -15,7 +16,7 @@ export const Rooms = () => {
   const [roomsData, setRoomsData] = useState([]);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/rooms")
+    fetch(`${PORT}/api/rooms`)
       .then(function (response) {
         return response.json();
       })

@@ -5,6 +5,7 @@ import { Input } from "../Input";
 import styles from "./sign.module.scss";
 import eye from "../../images/eye.png";
 import eye1 from "../../images/eye1.png";
+import { PORT } from "../../const";
 export const SignUp = () => {
   const [passwordType, setPasswordType] = useState("password");
   const navigate = useNavigate();
@@ -25,7 +26,7 @@ export const SignUp = () => {
     event.preventDefault();
 
     if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      fetch("http://localhost:5000/api/login", {
+      fetch(`${PORT}/api/login`, {
         method: "post",
         body: JSON.stringify({ email, password }),
         headers: {
