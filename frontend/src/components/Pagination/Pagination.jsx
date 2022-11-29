@@ -44,7 +44,6 @@ export const Pagination = ({
       : 0;
 
   const totalPages = Math.ceil(totalRecords / pageLimit);
-  console.log(totalPages, totalRecords, pageLimit);
   const [currentPage, setCurrentPage] = useState(1);
 
   useEffect(() => {
@@ -66,7 +65,6 @@ export const Pagination = ({
   };
 
   const handleClick = (page, evt) => {
-    console.log(page, "handleClick");
     evt.preventDefault();
     gotoPage(page);
   };

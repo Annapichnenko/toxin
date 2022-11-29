@@ -69,3 +69,10 @@
   display: flex;
   justify-content: space-between;
 }
+.close {
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
+}

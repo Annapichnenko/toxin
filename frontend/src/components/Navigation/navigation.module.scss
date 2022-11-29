@@ -17,6 +17,7 @@
   list-style: none;
   position: relative;
   margin-right: 20px;
+  cursor: pointer;
 }
 .dt:before {
   background-image: url("./nav.svg");
@@ -33,6 +34,7 @@
   text-decoration: none;
   list-style: none;
   position: relative;
+  cursor: pointer;
 }
 .dt1[open] .dt1:before {
   transform: rotate(180deg);
@@ -51,12 +53,19 @@
 .text {
   padding-right: 20px;
   white-space: nowrap;
+  cursor: pointer;
 }
 .texts {
   margin-right: 17px;
   margin-left: 25px;
+  cursor: pointer;
 }
 .title {
   margin-right: 20px;
   margin-left: 5px;
+  cursor: pointer;
+}
+.link {
+  text-decoration: none;
+  color: rgba(31, 32, 65, 0.5);
 }

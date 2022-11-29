@@ -1,6 +1,6 @@
 import React from "react";
 import styles from "./comfort.module.scss";
-import images from "./emoticon.svg";
+
 export const Comfort = ({ title, text, image }) => {
   return (
     <div className={styles.comfort}>

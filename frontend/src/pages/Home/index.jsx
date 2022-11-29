@@ -1,22 +1,12 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { Card } from "../../components/Card";
 import { Container } from "../../components/Container";
-import { PORT } from "../../const";
 import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./home.module.scss";
-export const Home = () => {
-  const [title, setTitle] = useState("загрузка...");
+import { useGetTitle } from "./hooks/useGetTitle";
 
-  useEffect(() => {
-    fetch(`${PORT}/api/datas`)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log("data", data);
-        setTitle(data[0].title);
-      });
-  }, []);
+export const Home = () => {
+  const { title } = useGetTitle();
 
   return (
     <MainLayout>

@@ -24,6 +24,7 @@ export const Menu = ({ header, items, active, setActive, userName }) => {
         <div className={styles.menuHeader}>
           {header}
           <img
+            className={styles.close}
             alt="Закрыть"
             onClick={() => setActive(!active)}
             width="40px"
@@ -34,7 +35,9 @@ export const Menu = ({ header, items, active, setActive, userName }) => {
         <ul className={styles.ul}>
           {items.map((item) => (
             <li className={styles.li}>
-              <a href={item.href}>{item.value}</a>
+              <a className={styles.link} href={item.href}>
+                {item.value}
+              </a>
             </li>
           ))}
         </ul>

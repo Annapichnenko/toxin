@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React from "react";
 import { CardSlider } from "../../components/CardSlider";
 import { Checkbox } from "../../components/Checkbox";
 import { CheckboxList } from "../../components/CheckboxList";
@@ -8,88 +8,18 @@ import { DateCalendar } from "../../components/DateCalendar";
 import { DropDown } from "../../components/DropDown";
 import { Pagination } from "../../components/Pagination/Pagination";
 import { Slider } from "../../components/Slider";
-import { PORT } from "../../const";
 import { MainLayout } from "../../layouts/MainLayout";
+import { data1 } from "../../mocks";
+import { useGetRooms } from "./hooks/useGetRooms";
+import { usePagination } from "./hooks/usePagination";
 import styles from "./rooms.module.scss";
 
 export const Rooms = () => {
-  const [roomsData, setRoomsData] = useState([]);
+  const { roomsData } = useGetRooms();
 
-  useEffect(() => {
-    fetch(`${PORT}/api/rooms`)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        console.log("data", data);
-        setRoomsData(data);
-      });
-  }, []);
+  const { pagination, filteredValues, pageLimit, onPageChanged } =
+    usePagination({ roomsData });
 
-  const data1 = [
-    {
-      id: "list11",
-      text: "Завтрак",
-    },
-    {
-      id: "list12",
-      text: "Стул кормления",
-    },
-    {
-      id: "list13",
-      text: "Кроватка",
-    },
-    {
-      id: "list14",
-      text: "Телевизор",
-    },
-    {
-      id: "list15",
-      text: "Шампунь",
-    },
-    {
-      id: "list16",
-      text: "Письменный стол",
-    },
-  ];
-
-  const [filteredValues, setFilteredValues] = useState([]);
-
-  const [pagination, setPagination] = useState({
-    currentPage: 1,
-    current_values: [],
-    totalPages: null,
-    values: [],
-    query: null,
-  });
-
-  const pageLimit = 12;
-  const onPageChanged = ({
-    currentPage,
-    totalPages,
-    pageLimit,
-    filteredVal = filteredValues,
-  }) => {
-    let values = filteredVal;
-
-    let offset = (currentPage - 1) * pageLimit;
-    let current_values = values.slice(offset, offset + pageLimit);
-
-    setPagination({
-      ...pagination,
-      currentPage: currentPage,
-      current_values: current_values,
-      totalPages: totalPages,
-    });
-  };
-
-  useEffect(() => {
-    setFilteredValues(roomsData);
-  }, [roomsData]);
-
-  useEffect(() => {
-    onPageChanged({ currentPage: 1, totalPages: 15, pageLimit });
-  }, [filteredValues]);
   return (
     <MainLayout withFooterBorder>
       <div className={styles.wrapper}>

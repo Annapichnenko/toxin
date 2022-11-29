@@ -1,22 +1,9 @@
 import React from "react";
 import styles from "./graph.module.scss";
 import { Cell, Pie, PieChart } from "recharts";
+import { data } from "../../mocks";
 
 export const Graph = () => {
-  const data02 = [
-    {
-      name: "good",
-      value: 25,
-    },
-    {
-      name: "excellent",
-      value: 50,
-    },
-    {
-      name: "ok",
-      value: 25,
-    },
-  ];
   return (
     <div className={styles.graph}>
       <div className={styles.wrapper}>
@@ -39,7 +26,7 @@ export const Graph = () => {
           </linearGradient>
         </defs>
         <Pie
-          data={data02}
+          data={data}
           dataKey="value"
           cx="50%"
           cy="50%"
@@ -48,7 +35,7 @@ export const Graph = () => {
           paddingAngle={2}
           fill="#82ca9d"
         >
-          {data02.map((entry, key) => (
+          {data.map((entry, key) => (
             <Cell
               key={`cell-${key}`}
               className={styles[entry.name]}

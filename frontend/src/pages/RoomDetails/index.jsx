@@ -15,22 +15,9 @@ import { BulletList } from "../../components/BulletList";
 import img1 from "./images.jpg";
 import img2 from "./image1.jpg";
 import img3 from "./image3.jpg";
+import { dataBullet } from "../../mocks";
 
 export const RoomDetails = () => {
-  const dataBullet = [
-    {
-      id: "list11",
-      text: "Нельзя с питомцами",
-    },
-    {
-      id: "list12",
-      text: "Без вечеринок и мероприятий",
-    },
-    {
-      id: "list13",
-      text: "Время прибытия — после 13:00, а выезд до 12:00",
-    },
-  ];
   return (
     <MainLayout withFooterBorder>
       <div className={styles.wrapper}>

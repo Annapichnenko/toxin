@@ -1,60 +1,21 @@
-import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React from "react";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import styles from "./sign.module.scss";
 import eye from "../../images/eye.png";
 import eye1 from "../../images/eye1.png";
-import { PORT } from "../../const";
+import { useControllerForm } from "./hooks/useControllerForm";
 export const SignUp = () => {
-  const [passwordType, setPasswordType] = useState("password");
-  const navigate = useNavigate();
-  const handleClickRec = () => {
-    navigate("/registration");
-  };
-  const [email, setEmail] = useState("");
-
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-
-  const [password, setPassword] = useState("");
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
-
-    if (email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      fetch(`${PORT}/api/login`, {
-        method: "post",
-        body: JSON.stringify({ email, password }),
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          if (data.message) {
-            alert(data.message);
-          } else {
-            localStorage.setItem("users", JSON.stringify(data));
-            navigate("/");
-          }
-        });
-    } else {
-      alert("Введите корректный email");
-    }
-  };
-  const handleIconClick = () => {
-    if (passwordType === "text") {
-      setPasswordType("password");
-    } else if (passwordType === "password") {
-      setPasswordType("text");
-    }
-  };
+  const {
+    handleFormSubmit,
+    email,
+    handleEmailChange,
+    password,
+    handlePasswordChange,
+    passwordType,
+    handleIconClick,
+    handleClickRec,
+  } = useControllerForm();
   return (
     <form onSubmit={handleFormSubmit} className={styles.sign}>
       <h2 className={styles.title}>Войти</h2>

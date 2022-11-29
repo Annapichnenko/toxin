@@ -1,5 +1,4 @@
-import React, { useEffect, useState } from "react";
-import { useNavigate } from "react-router-dom";
+import React, { useState } from "react";
 import { Button } from "../Button";
 import { Input } from "../Input";
 import { RadioButtons } from "../RadioButtons";
@@ -7,96 +6,30 @@ import { Toggle } from "../Toggle";
 import styles from "./form.module.scss";
 import eye from "../../images/eye.png";
 import eye1 from "../../images/eye1.png";
-import { PORT } from "../../const";
+import { useGetUsers } from "./hooks/useGetUsers";
+import { useControllerForm } from "./hooks/useControllerForm";
 export const RegistrationForm = () => {
-  const [passwordType, setPasswordType] = useState("password");
-
-  const [users, setUsers] = useState([]);
   const [create, setCreate] = useState(false);
-  useEffect(() => {
-    fetch(`${PORT}/api/users`)
-      .then(function (response) {
-        return response.json();
-      })
-      .then(function (data) {
-        setUsers(data);
-      });
-  }, [create]);
+  const { users } = useGetUsers({ create });
 
-  const navigate = useNavigate();
-  const [email, setEmail] = useState("");
-  const handleEmailChange = (event) => {
-    setEmail(event.target.value);
-  };
-  const [password, setPassword] = useState("");
-  const handlePasswordChange = (event) => {
-    setPassword(event.target.value);
-  };
-  const [name, setName] = useState("");
-  const handleNameChange = (event) => {
-    setName(event.target.value);
-  };
-  const [surname, setSurname] = useState("");
-  const handleSurnameChange = (event) => {
-    setSurname(event.target.value);
-  };
-  const [date, setDate] = useState("");
-  const handleDateChange = (event) => {
-    setDate(event.target.value);
-  };
-  const [sex, setSex] = useState("");
-  const handleSexChange = (event) => {
-    console.log(sex);
-    if (event.target.id === "radio-4") {
-      setSex("male");
-    } else if (event.target.id === "radio-3") {
-      setSex("female");
-    }
-  };
-  const handleFormSubmit = (event) => {
-    event.preventDefault();
+  const {
+    handleEmailChange,
+    handlePasswordChange,
+    handleNameChange,
+    handleSurnameChange,
+    handleDateChange,
+    handleSexChange,
+    handleFormSubmit,
+    handleIconClick,
+    handleClick,
+    date,
+    email,
+    password,
+    surname,
+    passwordType,
+    name,
+  } = useControllerForm({ setCreate, users });
 
-    const validCount = 3;
-    if (name.length < validCount) {
-      alert(`Длина имени должна быть не менее ${validCount} символов`);
-    } else if (surname.length < 3) {
-      alert("Длина фамилии должна быть не менее 3 символов");
-    } else if (email.length < 8) {
-      alert("Длина email должна быть не менее 8 символов");
-    } else if (password.length < 8) {
-      alert("Длина пароля должна быть больше 8 символов");
-    } else if (!email.match(/^[^\s@]+@[^\s@]+\.[^\s@]+$/)) {
-      alert("Введите корректный email");
-    } else if (users.find((user) => user.email === email)) {
-      alert("user с таким email уже существует");
-    } else {
-      fetch(`${PORT}/api/registration`, {
-        method: "post",
-        body: JSON.stringify({ email, password, name, surname }),
-        headers: {
-          "content-type": "application/json",
-        },
-      })
-        .then(function (response) {
-          return response.json();
-        })
-        .then(function (data) {
-          localStorage.setItem("users", JSON.stringify(data));
-        });
-      setCreate(true);
-      navigate("/");
-    }
-  };
-  const handleIconClick = () => {
-    if (passwordType === "text") {
-      setPasswordType("password");
-    } else if (passwordType === "password") {
-      setPasswordType("text");
-    }
-  };
-  const handleClick = () => {
-    navigate("/signin");
-  };
   return (
     <form onSubmit={handleFormSubmit} className={styles.form}>
       <div className={styles.reg}>Регистрация аккаунта</div>
