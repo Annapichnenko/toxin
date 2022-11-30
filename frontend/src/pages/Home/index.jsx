@@ -5,7 +5,7 @@ import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./home.module.scss";
 import { useGetTitle } from "./hooks/useGetTitle";
 
-export const Home = () => {
+const Home = () => {
   const { title } = useGetTitle();
 
   return (
@@ -21,3 +21,5 @@ export const Home = () => {
     </MainLayout>
   );
 };
+
+export default Home;

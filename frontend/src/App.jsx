@@ -1,24 +1,25 @@
-import React from "react";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import { Home } from "./pages/Home";
-import { Registration } from "./pages/Registration";
-import { RoomDetails } from "./pages/RoomDetails";
-import { Rooms } from "./pages/Rooms";
-import { SignIn } from "./pages/SignIn";
-import { Test } from "./pages/Test";
+import React, { Suspense, lazy } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+
+const Home = lazy(() => import("./pages/Home"));
+const Registration = lazy(() => import("./pages/Registration"));
+const RoomDetails = lazy(() => import("./pages/RoomDetails"));
+const Rooms = lazy(() => import("./pages/Rooms"));
+const SignIn = lazy(() => import("./pages/SignIn"));
 
 export function App() {
   return (
-    <Router>
-      <Routes>
-        <Route path="/test" element={<Test />} />
-        <Route path="/rooms" element={<Rooms />} />
-        <Route path="/" element={<Home />} />
-        <Route path="/toxin" element={<Home />} />
-        <Route path="/signin" element={<SignIn />} />
-        <Route path="/registration" element={<Registration />} />
-        <Route path="/roomdetails/:id" element={<RoomDetails />} />
-      </Routes>
-    </Router>
+    <Suspense fallback="loading...">
+      <Router>
+        <Routes>
+          <Route path="/rooms" element={<Rooms />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/toxin" element={<Home />} />
+          <Route path="/signin" element={<SignIn />} />
+          <Route path="/registration" element={<Registration />} />
+          <Route path="/roomdetails/:id" element={<RoomDetails />} />
+        </Routes>
+      </Router>
+    </Suspense>
   );
 }

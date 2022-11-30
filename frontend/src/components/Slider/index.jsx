@@ -24,7 +24,7 @@ export const Slider = ({ title }) => {
           </div>
         </div>
         <ReactSlider
-          lassName={styles.slider}
+          className={styles.slider}
           thumbClassName={styles.thumb}
           trackClassName={styles.track}
           defaultValue={[0, 100]}

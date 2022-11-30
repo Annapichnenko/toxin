@@ -17,7 +17,7 @@ import img2 from "./image1.jpg";
 import img3 from "./image3.jpg";
 import { dataBullet } from "../../mocks";
 
-export const RoomDetails = () => {
+const RoomDetails = () => {
   return (
     <MainLayout withFooterBorder>
       <div className={styles.wrapper}>
@@ -109,3 +109,5 @@ export const RoomDetails = () => {
     </MainLayout>
   );
 };
+
+export default RoomDetails;

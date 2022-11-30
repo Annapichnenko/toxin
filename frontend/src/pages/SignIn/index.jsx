@@ -4,7 +4,7 @@ import { SignUp } from "../../components/SignUp";
 import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./sign.module.scss";
 
-export const SignIn = () => {
+const SignIn = () => {
   return (
     <MainLayout>
       <div className={styles.wrapper}>
@@ -17,3 +17,5 @@ export const SignIn = () => {
     </MainLayout>
   );
 };
+
+export default SignIn;

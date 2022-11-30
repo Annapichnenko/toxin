@@ -14,7 +14,7 @@ import { useGetRooms } from "./hooks/useGetRooms";
 import { usePagination } from "./hooks/usePagination";
 import styles from "./rooms.module.scss";
 
-export const Rooms = () => {
+const Rooms = () => {
   const { roomsData } = useGetRooms();
 
   const { pagination, filteredValues, pageLimit, onPageChanged } =
@@ -141,3 +141,5 @@ export const Rooms = () => {
     </MainLayout>
   );
 };
+
+export default Rooms;

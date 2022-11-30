@@ -3,7 +3,7 @@ import { Container } from "../../components/Container";
 import { MainLayout } from "../../layouts/MainLayout";
 import styles from "./registration.module.scss";
 import { RegistrationForm } from "../../components/RegistrationForm";
-export const Registration = () => {
+const Registration = () => {
   return (
     <MainLayout>
       <div className={styles.wrapper}>
@@ -16,3 +16,5 @@ export const Registration = () => {
     </MainLayout>
   );
 };
+
+export default Registration;
