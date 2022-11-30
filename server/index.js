@@ -1,10 +1,13 @@
 import express from "express";
 import mongoose from "mongoose";
-import router from "./router.js";
+import router from "./Routes/router.js";
 import cors from "cors";
+import dotenv from "dotenv";
+
+dotenv.config();
 
 const DB_URL = `mongodb+srv://annapichnenko:GooGle2022@cluster0.ci46dta.mongodb.net/?retryWrites=true&w=majority`;
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 const app = express();
 app.use(cors());

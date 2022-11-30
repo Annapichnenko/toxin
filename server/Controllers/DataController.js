@@ -1,4 +1,4 @@
-import DataService from "./DataService.js";
+import DataService from "../Services/DataService.js";
 
 class DataController {
   async getTitle(req, res) {

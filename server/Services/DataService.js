@@ -1,4 +1,4 @@
-import Data from "./Data.js";
+import Data from "../Schemas/Data.js";
 
 class DataService {
   async getTitle() {

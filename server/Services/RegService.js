@@ -1,4 +1,4 @@
-import Registration from "./Registration.js";
+import Registration from "../Schemas/Registration.js";
 
 class RegService {
   async create(data) {

@@ -1,4 +1,4 @@
-import RegService from "./RegService.js";
+import RegService from "../Services/RegService.js";
 
 class RegController {
   async create(req, res) {
