@@ -1,7 +1,7 @@
 # Frontend - REACT - TOXIN - Бронирование отелей
 # Backend - express server & mongodb
 
-## [Просмотр работы](https://annapichnenko.github.io/toxin/)
+## [Просмотр frontend приложения](https://annapichnenko.github.io/toxin/)
 
 #### Выполненые работы, 1) Верстка сайта по макету фигма https://www.figma.com/file/MumYcKVk9RkKZEG6dR5E3A/MetaLamp-(former-FSD)-frontend-education-program.-The-2nd-task?node-id=18402%3A1 2) Регистрация и авторизация по email 3) Perfect pixel 4) Адаптив сайта под мобильное устройство - responsive 5) Оптимизация с помощью React.lazy 6) Получение комнат с базы данных mongodb 7) Навигация по сайту - "Главная страница" => "Страница подобрать номер" => "Страница подробности о номере" а так же "Страница регистрации" и "Страница авторизации" - всего 5 страниц
 
