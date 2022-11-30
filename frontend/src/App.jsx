@@ -17,7 +17,7 @@ export function App() {
         <Route path="/toxin" element={<Home />} />
         <Route path="/signin" element={<SignIn />} />
         <Route path="/registration" element={<Registration />} />
-        <Route path="/roomDetails" element={<RoomDetails />} />
+        <Route path="/roomdetails/:id" element={<RoomDetails />} />
       </Routes>
     </Router>
   );

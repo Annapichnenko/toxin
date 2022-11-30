@@ -76,7 +76,7 @@ export const useControllerForm = ({ setCreate, users }) => {
     }
   };
   const handleIconClick = () => {
-    if (passwordType === "handleEmailChangetext") {
+    if (passwordType === "text") {
       setPasswordType("password");
     } else if (passwordType === "password") {
       setPasswordType("text");

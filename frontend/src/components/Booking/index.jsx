@@ -5,7 +5,14 @@ import icon from "./icon.svg";
 
 import styles from "./booking.module.scss";
 import { Button } from "../Button";
+import { useParams } from "react-router-dom";
+
 export const Booking = () => {
+  const { id } = useParams();
+
+  const handleBookingClick = () => {
+    alert(`забронировано! номер комнаты № ${id}`);
+  };
   return (
     <div className={styles.book}>
       <div className={styles.title4}>
@@ -81,6 +88,7 @@ export const Booking = () => {
           bigButton={true}
           isIcons={true}
           color="white"
+          onClick={handleBookingClick}
         />
       </div>
     </div>

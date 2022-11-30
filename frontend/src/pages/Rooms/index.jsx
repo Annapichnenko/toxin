@@ -117,6 +117,7 @@ export const Rooms = () => {
                       price={room.price}
                       comments={room.comments}
                       isLux={room.isLux}
+                      id={room._id}
                     />
                   ))
                 ) : (

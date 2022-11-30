@@ -4,10 +4,17 @@ import { Carosel } from "../Carosel";
 import { RateButton } from "../RateButton";
 import styles from "./card.module.scss";
 
-export const CardSlider = ({ number, price, comments, isLux, rooms = [] }) => {
+export const CardSlider = ({
+  number,
+  price,
+  comments,
+  isLux,
+  rooms = [],
+  id,
+}) => {
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/roomdetails");
+    navigate(`/roomdetails/${id}`);
   };
   return (
     <div className={styles.slider}>
